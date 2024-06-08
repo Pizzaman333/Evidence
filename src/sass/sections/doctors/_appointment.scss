@@ -1,0 +1,47 @@
+.appointment {
+    &__img {
+        width: 808px;
+    } 
+
+    &__title {
+        color: $accent-color;
+font-size: 40px;
+font-weight: 700;
+line-height:  110%; 
+    }
+
+    &__input {
+        width: 591px;
+        height: 60px;
+
+        &::placeholder {
+            color:  #9c9696;
+font-size: 18px;
+font-weight: 400;
+line-height: 133.333%; 
+        }
+    }
+
+    &__text {
+        color: $main-text-color;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+&__label {
+    color: $main-text-color;
+font-size: 16px;
+font-weight: 400;
+line-height: 150%; 
+} 
+
+&__button {
+    border-radius: 50px;
+background: $btn-bg;
+    color: $button-text;
+font-size: 20px;
+font-weight: 600;
+line-height: 120%;
+}
+}
