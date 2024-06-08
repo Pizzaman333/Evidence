@@ -1,6 +1,6 @@
 <section class="appointment">
   <div class="container">
-    <img src="" alt="hand" class="appointment__img" />
+    <img src="../../image/destop/appointment-bg@1x.webp" alt="hand" class="appointment__img" />
     <h2 class="appointment__title">Допоможемо знайти лікаря</h2>
     <ul class="appointment__list">
       <li class="appointment__itme">
@@ -26,7 +26,11 @@
     </ul>
     <p class="appointment__text">Як з вами краще зв’язатися?    </p>
     <form action="" class="appointment__send">
-      <input type="radio" class="appointment__choose">
+      <input type="radio" class="appointment__choose" id="appointment__choose">
+      <label for="#appointment__choose" class="appointment__label">Напишіть мені на Viber</label>
+      <input type="radio" class="appointment__choose" id="appointment__choose2">
+      <label for="#appointment__choose2" class="appointment__label">Подзвоніть мені</label>
+      <button class="appointment__button" type="button">Відправити</button>
     </form>
   </div>
 </section>
