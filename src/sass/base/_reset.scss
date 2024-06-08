@@ -1,25 +1,22 @@
-ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+a {
+  text-decoration: none;
 }
 
-  a{
-    text-decoration: none;
-  }
+ul {
+  list-style-type: none;
+}
 
-  li{
-    list-style: none;  
-    }
-    
+h1, h2, h3, h4, p, ul {
+  margin: 0;
+  padding: 0;
+}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ul{
-    margin: 0px;
-  }
+button {
+  border: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
