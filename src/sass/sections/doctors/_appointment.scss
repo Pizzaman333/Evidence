@@ -1,18 +1,36 @@
 .appointment {
+&__container {
+    display: flex;
+    gap: 178px;
+}
+
     &__img {
         width: 808px;
     } 
 
     &__title {
+        margin-top: 40px;
+        margin-bottom: 50px;
         color: $accent-color;
 font-size: 40px;
 font-weight: 700;
 line-height:  110%; 
     }
 
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-bottom: 32px;
+    }
+
     &__input {
         width: 591px;
         height: 60px;
+        border-radius: 50px;
+border: 1px solid  #9C9696;
+background:  #F7F7F8;
+padding-left: 16px;
 
         &::placeholder {
             color:  #9c9696;
@@ -24,9 +42,21 @@ line-height: 133.333%;
 
     &__text {
         color: $main-text-color;
-        font-size: 16px;
+        font-size: 16px; 
         font-weight: 400;
         line-height: 150%;
+        margin-bottom: 20px;
+    }
+
+    &__select {
+        display: flex;
+        gap: 14px;
+        margin-bottom: 36px;
+    }
+
+    &__choose {
+        width: 24px;
+        height: 24px;
     }
 
 &__label {
@@ -43,5 +73,7 @@ background: $btn-bg;
 font-size: 20px;
 font-weight: 600;
 line-height: 120%;
+width: 592px;
+height: 53px;
 }
 }
