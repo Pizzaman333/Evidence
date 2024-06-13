@@ -1,68 +1,137 @@
-.docs  {
+.docs {
+  padding-top: 20px;
+  padding-bottom: 53px;
 
-    &__title {
-        color: $accent-color;
-font-size: 40px;
-font-weight: 700;
-line-height: 110%; 
+  &__title {
+    color: $accent-color;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 110%;
+    margin-top: 16px;
+  }
+
+  &__input {
+    width: 783px;
+    height: 60px;
+    border-radius: 50px;
+    border: 1px solid #000;
+    background: #f7f7f8;
+    padding-left: 20px;
+
+    &::placeholder {
+      color: #c8c8c8;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 133.333%;
     }
+  }
 
-    &__input {
-width: 783px;
-height: 60px;
-border-radius: 50px;
+  &__search {
+    display: flex;
+    justify-content: space-between;
+  }
 
-        &::placeholder {
-            color: #c8c8c8;
-font-size: 18px;
-font-weight: 400;
-line-height: 133.333%;
-        }
-    }
+  &__subtitle {
+    color: $main-text-color;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+  }
 
-    &__subtitle {
-        color: $main-text-color;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: normal;
-    }
+  &__subtitle-blue {
+    color: $accent-color;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+  }
 
-    &__subtitle-blue {
-        color: $accent-color;
-font-size: 20px;
-font-weight: 400;
-line-height: normal;
-    }
+  &__nav {
+    margin-top: 32px;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
 
-    &__occupation {
-        color: $accent-color;
-font-size: 32px;
-font-weight: 400;
-line-height: 137.5%; 
-    }
+  &__occupation {
+    color: $accent-color;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 137.5%;
+  }
 
-    &__img {
-        width: 300px;
-    }
+  &__list {
+    margin-top: 32px;
+    display: flex;
+    gap: 32px;
+  }
 
-    &__name {
-        color: $main-text-color;
-font-size: 24px;
-font-weight: 700;
-line-height: normal;
-    }
+  &__img {
+    width: 300px;
+  }
 
-    &__text {
-        color: $main-text-color;
-font-size: 24px;
-font-weight: 400;
-line-height: normal;
-    }
+  &__name {
+    text-align: center;
+    color: $main-text-color;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: normal;
+  }
 
-    &__link {
-        color: $accent-color;
-font-size: 32px;
-font-weight: 400;
-line-height: 137.5%;
-    }
+  &__text {
+    color: $main-text-color;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    align-self: flex-start;
+  }
+
+  &__doctors1,
+  &__doctors2,
+  &__doctors3 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__biglist {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 67px;
+    margin-bottom: 50px;
+  }
+
+  &__doctors1 {
+    gap: 146px;
+  }
+
+  &__doctors2 {
+    gap: 54px;
+  }
+
+  &__doctors3 {
+    gap: 90px;
+  }
+
+  &__doctor {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+  }
+
+  &__link {
+    color: $accent-color;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 137.5%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 14px;
+  }
+
+  &__icon {
+    stroke: $accent-color;
+    fill: transparent;
+  }
 }
