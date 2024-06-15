@@ -1,0 +1,36 @@
+.servise {
+    &__title {
+        color: $accent-color;
+        font-family: "Open Sans";
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 44px; /* 91.667% */
+    }
+
+    &__list {
+        display: flex;
+        width: 1718px;
+        flex-wrap: wrap;
+        gap: 92px;
+    }
+
+    &__list-item {
+        width: 270px;
+        height: 270px;
+        border-radius: 50px;
+        background: #CEF2F0;
+    }
+
+    &__text {
+        display: flex;
+        justify-content: center;
+        color: $accent-color;
+        font-family: "Open Sans";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 44px; /* 183.333% */
+    }
+    
+}
