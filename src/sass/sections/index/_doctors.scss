@@ -1,43 +1,109 @@
 .doctors {
 
+    &__wraper-number {
+        border: solid blue 1px;
+        margin-right: 192px;
+        margin-top: 230px;
+        width: 671px;
+        height: 396px;
+        flex-shrink: 0;
+    }
+
     &__title {
         color:$accent-color;
         font-family: "Open Sans";
-        font-size: 34.15px;
+        font-size: 48px;
         font-weight: 600;
         line-height: 31.304px; /* 91.667% */
+        padding-top: 10px;
+        padding-bottom: 52px;
+        padding-left: 36px;
+        padding-right: 488px;
+    }
+
+    &__wraper {
+        display: flex;
+    }
+
+    &__some-img {
+        display: flex;
+    }
+
+    &__img:nth-child(1) {
+        width: 270px;
+        height: 270px;
+        border-radius: 133px;
+        border: 2px solid  #72B7F2;
+        margin-top: 62px;
+    }
+
+    &__img:nth-child(2) {
+        width: 391px;
+        height: 398px;
+        border-radius: 195.5px;
+        border: 2px solid $light-pink;
+        margin-top: 310px;
+    }
+
+    &__img:nth-child(3) {
+        width: 266px;
+        height: 270px;
+        border-radius: 135px;
+        border: 2px solid $light-yellow;
+        margin-top: 40px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 68px;
+        
+    }
+   
+    &__list-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__subtitle {
+        color: var(--pink-stroke, #D1A4BC);
+        font-family: "Open Sans";
+        font-size: 96px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 31.304px; /* 45.833% */
+        padding-bottom: 32px;
     }
 
     &__text {
         color:$accent-color;
         text-align: center;
         font-family: "Open Sans";
-        font-size: 22.767px;
+        font-size: 32px;
         font-weight: 400;
+        padding-bottom: 62px;
     }
 
-    &__subtitle {
-        color: var(--pink-stroke, #D1A4BC);
-        font-family: "Open Sans";
-        font-size: 68.3px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 31.304px; /* 45.833% */
-    }
 
     &__btn {
         display: flex;
-        width: 452px;
-        height: 56px;
-        padding: 16px;
+        width: 636px;
+        height: 80px;
+        padding: 20px;
         justify-content: center;
         align-items: center;
-        gap: 8px;
+        gap: 10px;
         flex-shrink: 0;
         color: $button-text;
 
         border-radius: 35.573px;
-        background: var(--blue-blue, #72B7F2);
+        background: $btn-bg;
+        margin-right: auto;
+        margin-left: auto;
+
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 44px; /* 137.5% */
     }
     
     

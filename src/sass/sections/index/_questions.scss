@@ -1,4 +1,7 @@
 .qestion {
+        padding-top: 24px;
+        padding-bottom: 93px;
+
     &__title {
         color: $accent-color;
         font-family: "Open Sans";
@@ -6,6 +9,7 @@
         font-style: normal;
         font-weight: 600;
         line-height: 44px; /* 91.667% */
+        margin-bottom: 74px;
     }
 
     &__wrapper {
@@ -15,6 +19,13 @@
     &__first-link {
         display: flex;
         flex-direction: column;
+        border-radius: 50px;
+        background: #F3DCDC;
+        width: 449px;
+        height: 1466px;
+        padding: 56px;
+        margin-right: 125px;
+        gap: 56px;
     }
 
     &__link {
@@ -26,8 +37,15 @@
         line-height: 44px; /* 137.5% */
     }
    
-    &qestion__open {
-        display: flex;
+    // &__open {
+    //     display: flex;
+    // }
+
+    &__open-item {
+        margin-bottom: 64px;
+        padding-bottom: 32px;
+        border-bottom: solid $accent-color 1px;
+        width: 1052px;
     }
 
     &__open-link {
@@ -37,6 +55,10 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+
+        // padding-bottom: 32px;
+        // border-bottom: solid $accent-color 1px;
+        
     }
     
 }
