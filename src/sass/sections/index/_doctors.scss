@@ -1,11 +1,15 @@
 .doctors {
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 80px;
+
+    &__wraper {
+        display: flex;
+    }
 
     &__wraper-number {
-        border: solid blue 1px;
-        margin-right: 192px;
-        margin-top: 230px;
-        width: 671px;
-        height: 396px;
+        border-radius: 50px;
+        border: 1px solid #A4CEF5;
         flex-shrink: 0;
     }
 
@@ -15,16 +19,17 @@
         font-size: 48px;
         font-weight: 600;
         line-height: 31.304px; /* 91.667% */
-        padding-top: 10px;
-        padding-bottom: 52px;
-        padding-left: 36px;
-        padding-right: 488px;
+        margin-top: 40px;
+        margin-bottom: 52px;
+        margin-left: 36px;
+        // padding-right: 488px;
     }
 
-    &__wraper {
-        display: flex;
+    &__list {
+        // border: 2px solid  #72B7F2;
     }
 
+    
     &__some-img {
         display: flex;
     }
@@ -34,7 +39,9 @@
         height: 270px;
         border-radius: 133px;
         border: 2px solid  #72B7F2;
-        margin-top: 62px;
+        position: absolute;
+        top: 94px;
+        left: 980px;
     }
 
     &__img:nth-child(2) {
@@ -42,7 +49,9 @@
         height: 398px;
         border-radius: 195.5px;
         border: 2px solid $light-pink;
-        margin-top: 310px;
+        position: absolute;
+        top: 342px;
+        left: 1260px;
     }
 
     &__img:nth-child(3) {
@@ -50,13 +59,14 @@
         height: 270px;
         border-radius: 135px;
         border: 2px solid $light-yellow;
-        margin-top: 40px;
+        position: absolute;
+        top: 72px;
+        left: 1515px;
     }
 
     &__list {
         display: flex;
         justify-content: center;
-        gap: 68px;
         
     }
    
@@ -71,8 +81,11 @@
         font-size: 96px;
         font-style: normal;
         font-weight: 400;
-        line-height: 31.304px; /* 45.833% */
-        padding-bottom: 32px;
+        // line-height: 31.304px; /* 45.833% */
+        
+        margin-right: 38px;
+        margin-left: 38px;
+        margin-bottom: 32px;
     }
 
     &__text {
@@ -81,7 +94,9 @@
         font-family: "Open Sans";
         font-size: 32px;
         font-weight: 400;
-        padding-bottom: 62px;
+        margin-bottom: 62px;
+        margin-right: 38px;
+        margin-left: 38px;
     }
 
 
@@ -98,12 +113,15 @@
 
         border-radius: 35.573px;
         background: $btn-bg;
-        margin-right: auto;
-        margin-left: auto;
+        // margin-right: auto;
+        // margin-left: auto;
 
         font-size: 32px;
         font-weight: 400;
         line-height: 44px; /* 137.5% */
+
+        margin-left: 18px;
+        margin-bottom: 224px;
     }
     
     
