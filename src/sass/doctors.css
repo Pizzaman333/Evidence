@@ -1,0 +1,361 @@
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: "Open Sans";
+}
+
+.doctors__body {
+  background: #ECEFF7;
+}
+
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 362px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1306px) {
+  .container {
+    width: 1306px;
+  }
+}
+@media screen and (min-width: 1740px) {
+  .container {
+    width: 1740px;
+  }
+}
+
+.docs {
+  padding-top: 20px;
+  padding-bottom: 53px;
+}
+.docs__title {
+  color: #2887D9;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 110%;
+  margin-top: 16px;
+}
+.docs__input {
+  width: 783px;
+  height: 60px;
+  border-radius: 50px;
+  border: 1px solid #000;
+  background: #f7f7f8;
+  padding-left: 20px;
+}
+.docs__input::-moz-placeholder {
+  color: #c8c8c8;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 133.333%;
+}
+.docs__input::placeholder {
+  color: #c8c8c8;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 133.333%;
+}
+.docs__search {
+  display: flex;
+  justify-content: space-between;
+}
+.docs__subtitle {
+  color: #3A3B3D;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+}
+.docs__subtitle-blue {
+  color: #2887D9;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+}
+.docs__nav {
+  margin-top: 32px;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.docs__occupation {
+  color: #2887D9;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 137.5%;
+}
+.docs__list {
+  margin-top: 32px;
+  display: flex;
+  gap: 32px;
+}
+.docs__img {
+  width: 300px;
+}
+.docs__name {
+  text-align: center;
+  color: #3A3B3D;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+}
+.docs__text {
+  color: #3A3B3D;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  align-self: flex-start;
+}
+.docs__doctors1, .docs__doctors2, .docs__doctors3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.docs__biglist {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 67px;
+  margin-bottom: 50px;
+}
+.docs__doctors1 {
+  gap: 146px;
+}
+.docs__doctors2 {
+  gap: 54px;
+}
+.docs__doctors3 {
+  gap: 90px;
+}
+.docs__doctor {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+}
+.docs__link {
+  color: #2887D9;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 137.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+.docs__icon {
+  stroke: #2887D9;
+  fill: transparent;
+}
+
+.appointment__container {
+  display: flex;
+  gap: 178px;
+}
+.appointment__img {
+  width: 808px;
+}
+.appointment__title {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  color: #2887D9;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 110%;
+}
+.appointment__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+.appointment__input {
+  width: 591px;
+  height: 60px;
+  border-radius: 50px;
+  border: 1px solid #9C9696;
+  background: #F7F7F8;
+  padding-left: 16px;
+}
+.appointment__input::-moz-placeholder {
+  color: #9c9696;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 133.333%;
+}
+.appointment__input::placeholder {
+  color: #9c9696;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 133.333%;
+}
+.appointment__text {
+  color: #3A3B3D;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+.appointment__select {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 36px;
+}
+.appointment__choose {
+  width: 24px;
+  height: 24px;
+}
+.appointment__label {
+  color: #3A3B3D;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.appointment__button {
+  border-radius: 50px;
+  background: #72B7F2;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 120%;
+  width: 592px;
+  height: 53px;
+}
+
+.footer {
+  background-color: #D0E1F1;
+  padding: 25px 0px 10px 0px;
+  position: relative;
+}
+.footer__logo1 {
+  width: 72px;
+  height: 84px;
+}
+.footer__logo2 {
+  width: 123px;
+  height: 56px;
+  fill: #2887D9;
+}
+.footer__line {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  height: 2px;
+  background-color: #72B7F2;
+}
+.footer__first-box {
+  display: flex;
+  align-items: center;
+  gap: 39px;
+}
+.footer__first-list {
+  gap: 140px;
+  justify-content: center;
+  display: flex;
+  padding-bottom: 29px;
+}
+.footer__icons {
+  width: 42px;
+  height: 42px;
+}
+.footer__text {
+  color: var(--blue-dark-blue, #2887D9);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.footer__discription {
+  color: var(--gray-maintext, #3A3B3D);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.footer__link {
+  color: var(--gray-maintext, #3A3B3D);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.footer__link2 {
+  color: #2887D9;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+}
+.footer__subtitle {
+  color: var(--blue-dark-blue, #2887D9);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 24px */
+}
+.footer__subtitle2 {
+  color: var(--blue-dark-blue, #2887D9);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+}
+.footer__second-list {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.footer__item2 {
+  margin-left: 133px;
+}
+.footer__item3 {
+  margin-left: 205px;
+}
+.footer__item4 {
+  margin-left: 345px;
+}
+.footer__logo-list {
+  display: flex;
+  align-items: center;
+}
+.footer__list-text1 {
+  list-style: disc;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-left: 20px;
+}
+.footer__list-text2 {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}/*# sourceMappingURL=doctors.css.map */

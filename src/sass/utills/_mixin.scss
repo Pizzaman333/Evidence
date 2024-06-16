@@ -1,0 +1,15 @@
+@mixin flex-mixin($justify-content, $align-items ) {
+    display: flex;
+    justify-content: $justify-content ;
+    align-items: $align-items;
+}
+
+@mixin gap-mixin($gap) {
+    display: flex;
+    gap: $gap;
+}
+
+@mixin font($font-weight, $font-size ) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+}
