@@ -4,31 +4,74 @@
 
   &__title {
     color: $accent-color;
-    font-size: 40px;
     font-weight: 700;
-    line-height: 110%;
     margin-top: 16px;
+    font-size: 16px;
+    line-height: 112.5%;
+    font-family: Montserrat;
+
+    @media screen and (min-width: 1306px) {
+      font-size: 28.458px;
+      font-family: "Open Sans";
+    }
+
+    @media screen and (min-width: 1740px) {
+      line-height: 110%;
+      font-size: 40px;
+    }
   }
 
   &__input {
-    width: 783px;
-    height: 60px;
+    width: 342px;
+    height: 46px;
     border-radius: 50px;
-    border: 1px solid #000;
-    background: #f7f7f8;
+    border: 1px solid #9c9696;
+    background: #fff;
     padding-left: 20px;
+
+    @media screen and (min-width: 1306px) {
+      width: 550px;
+      border-radius: 35.573px;
+      border: 0.711px solid #000;
+    }
+
+    @media screen and (min-width: 1740px) {
+      width: 783px;
+      height: 60px;
+      border-radius: 50px;
+      border: 1px solid #000;
+    }
 
     &::placeholder {
       color: #c8c8c8;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 400;
       line-height: 133.333%;
+
+      @media screen and (min-width: 1306px) {
+        font-size: 12.806px;
+      }
+
+      @media screen and (min-width: 1740px) {
+        font-size: 18px;
+      }
     }
   }
 
   &__search {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+
+    @media screen and (min-width: 1306px) {
+      flex-direction: row;
+    }
+
+    @media screen and (min-width: 1740px) {
+
+    }
   }
 
   &__subtitle {
@@ -46,10 +89,14 @@
   }
 
   &__nav {
+    display: none;
     margin-top: 32px;
-    display: flex;
     gap: 32px;
     align-items: center;
+
+    @media screen and (min-width: 1306px) {
+      display: flex;
+    }
   }
 
   &__occupation {
@@ -60,29 +107,61 @@
   }
 
   &__list {
+    display: none;
     margin-top: 32px;
-    display: flex;
     gap: 32px;
+
+    @media screen and (min-width: 1306px) {
+      display: flex;
+    }
   }
 
   &__img {
     width: 300px;
+
+    @media screen and (min-width: 1306px) {
+      width: 220px;
+    }
+
+    @media screen and (min-width: 1740px) {
+      width: 300px;
+    }
   }
 
   &__name {
     text-align: center;
     color: $main-text-color;
-    font-size: 24px;
     font-weight: 700;
-    line-height: normal;
+    font-family: Montserrat;
+    line-height: 112.5%;
+    font-size: 16px;
+
+    @media screen and (min-width: 1306px) {
+      width: 220px;
+    }
+
+    @media screen and (min-width: 1740px) {
+      width: 300px;
+      font-size: 24px;
+      line-height: normal;
+      font-family: "Open Sans";
+    }
   }
 
   &__text {
     color: $main-text-color;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: normal;
     align-self: flex-start;
+    line-height: 137.5%;
+
+    @media screen and (min-width: 1306px) {
+    }
+
+    @media screen and (min-width: 1740px) {
+      line-height: normal;
+      font-size: 24px;
+    }
   }
 
   &__doctors1,
@@ -96,42 +175,88 @@
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    gap: 67px;
-    margin-bottom: 50px;
+    gap: 0;
+    margin-bottom: 29px;
+
+    @media screen and (min-width: 1306px) {
+      gap: 67px;
+      margin-bottom: 50px;
+    }
   }
 
   &__doctors1 {
-    gap: 146px;
+    gap: 32px;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 1306px) {
+      gap: 146px;
+      flex-direction: row;
+    }
   }
 
   &__doctors2 {
+    display: none;
     gap: 54px;
+
+    @media screen and (min-width: 1306px) {
+      display: flex;
+    }
   }
 
   &__doctors3 {
+    display: none;
     gap: 90px;
+
+    @media screen and (min-width: 1306px) {
+      display: flex;
+    }
   }
 
   &__doctor {
     display: flex;
     flex-direction: column;
     gap: 14px;
-    align-items: center;
+    align-items: flex-start;
+
+    @media screen and (min-width: 1740px) {
+      align-items: center;
+    }
   }
 
   &__link {
     color: $accent-color;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 137.5%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 14px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 112.5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 14px;
+    font-family: Montserrat;
+
+    @media screen and (min-width: 1740px) {
+      font-family: "Open Sans";
+      line-height: 137.5%;
+      font-size: 32px;
+      font-weight: 400;
+      justify-content: center;
+    }
   }
 
   &__icon {
     stroke: $accent-color;
     fill: transparent;
+  }
+
+  &__wrap {
+    margin-right: auto;
+    margin-left: auto;
+    width: 300px;
+
+    @media screen and (min-width: 1306px) {
+      width: 100%;
+      margin: 0;
+    }
   }
 }

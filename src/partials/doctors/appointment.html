@@ -1,40 +1,81 @@
 <section class="appointment">
   <div class="container appointment__container">
-    <img src="../../image/destop/appointment-bg@1x.webp" alt="hand" class="appointment__img" />
+    <picture>
+      <source
+        srcset="
+          ../../image/destop/appointment-bg@1x.webp 1x,
+          ../../image/destop/appointment-bg@2x.webp 2x
+        "
+        media="(min-width: 1740px)"
+      />
+      <source
+        srcset="
+          ../../image/tablet/appointment-bg@1x.webp 1x,
+          ../../image/tablet/appointment-bg@2x.webp 2x
+        "
+        media="(min-width: 1306px)"
+      />
+      <source
+        srcset="
+          ../../image/mobile/appointment-bg@1x.webp 1x,
+          ../../image/mobile/appointment-bg@2x.webp 2x
+        "
+        media="(min-width: 310px)"
+      />
+      <img
+        src="../../image/mobile/appointment-bg@1x.webp"
+        alt="hand"
+        class="appointment__img"
+      />
+    </picture>
     <div class="appointment__wrap">
       <h2 class="appointment__title">Допоможемо знайти лікаря</h2>
-    <ul class="appointment__list">
-      <li class="appointment__itme">
-        <form class="appointment__form">
+      <ul class="appointment__list">
+        <li class="appointment__itme">
+          <form class="appointment__form">
+            <input
+              type="text"
+              class="appointment__input"
+              placeholder="Як до вас звернутись?"
+              required
+            />
+          </form>
+        </li>
+        <li class="appointment__itme">
+          <form class="appointment__form">
+            <input
+              type="tel"
+              class="appointment__input"
+              placeholder="+380(___) ___ -__-__"
+              required
+            />
+          </form>
+        </li>
+      </ul>
+      <p class="appointment__text">Як з вами краще зв’язатися?</p>
+      <form action="" class="appointment__send">
+        <div class="appointment__select">
           <input
-            type="text"
-            class="appointment__input"
-            placeholder="Як до вас звернутись?"
+            type="radio"
+            class="appointment__choose"
+            id="appointment__choose"
             required
           />
-        </form>
-      </li>
-      <li class="appointment__itme">
-        <form class="appointment__form">
+          <label for="#appointment__choose" class="appointment__label"
+            >Напишіть мені на Viber</label
+          >
           <input
-            type="tel"
-            class="appointment__input"
-            placeholder="+380(___) ___ -__-__"
+            type="radio"
+            class="appointment__choose"
+            id="appointment__choose2"
             required
           />
-        </form>
-      </li>
-    </ul>
-    <p class="appointment__text">Як з вами краще зв’язатися?    </p>
-    <form action="" class="appointment__send">
-      <div class="appointment__select">
-        <input type="radio" class="appointment__choose" id="appointment__choose" required>
-      <label for="#appointment__choose" class="appointment__label">Напишіть мені на Viber</label>
-      <input type="radio" class="appointment__choose" id="appointment__choose2" required>
-      <label for="#appointment__choose2" class="appointment__label">Подзвоніть мені</label>
-      </div>
-      <button class="appointment__button" type="submit">Відправити</button>
-    </form>
+          <label for="#appointment__choose2" class="appointment__label"
+            >Подзвоніть мені</label
+          >
+        </div>
+        <button class="appointment__button" type="submit">Відправити</button>
+      </form>
     </div>
   </div>
 </section>
