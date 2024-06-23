@@ -1,15 +1,29 @@
-
 <header class="header">
   <div class="header__box container">
-    <svg class="header__logo">
-      <use href="../../image/icons/logo.svg"></use>
+    <svg class="header__burger">
+      <use href="../../image/icons/symbol-defs-2.svg#icon-burger-menu"></use>
+    </svg>
+    <a class="header__logo-link" href="./index.html">
+      <ul class="header__logo-list">
+        <li>
+          <img src="./image/icons/logo.svg" alt="logo" />
+        </li>
+        <li>
+          <svg class="header__logo2">
+            <use href="../../image/icons/symbol-defs.svg#icon-logo"></use>
+          </svg>
+        </li>
+      </ul>
+    </a>
+    <svg class="header__search">
+      <use href="../../image/icons/symbol-defs-2.svg#icon-search"></use>
     </svg>
     <ul class="header__list">
       <li class="header__item">
         <a class="header__link" href="../../index.html">Про нас</a>
       </li>
       <li class="header__item">
-        <a class="header__link"  href="../../doctors.html">Лікарі</a>
+        <a class="header__link" href="../../doctors.html">Лікарі</a>
       </li>
       <li class="header__item">
         <a class="header__link" href="">Вартість</a>
@@ -24,18 +38,22 @@
         <a class="header__link" href="">Контакти</a>
       </li>
     </ul>
-    <!-- <div class="menu">
-      <svg class="menu__logo">
-        <use href=""></use>
-      </svg>
-        <ul class="menu__list">
-            <li class="menu__item">
-                <a href="" class="menu__personality">Пацієнт</a>
-            </li>
-            <li class="menu__item">
-                <a href="./doctors.html" class="menu__personality">Лікар</a>
-            </li>
+
+    <svg class="header__menu">
+      <use href="../../image/icons/symbol-defs-2.svg#icon-personality"></use>
+    </svg>
+    <form class="header__form">
+      <input type="checkbox" class="header__btn" id="header__btn" />
+      <label class="header__label" for="#header__btn">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a href="./index.html" class="header__menu-personality">Пацієнт</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="./doctors.html" class="header__menu-personality">Лікар</a>
+          </li>
         </ul>
-    </div> -->
+        </label>
+    </form>
   </div>
 </header>
