@@ -1,4 +1,4 @@
- <!-- <section class="servise">
+  <!-- <section class="servise">
     <div class="container">
         <h1 class="servise__title">Послуги та вартість</h1>
 
@@ -19,10 +19,12 @@
                         <p class="servise__text">Педіатрія</p>
                     </li>
                     <li class="servise__list-item ">
-                        <svg  width="95" height="100" class="servise__icon">
-                            <use href="./../../image/icons/symbol-defs.svg#icon-syringe"></use>
-                        </svg>
-                        <p class="servise__text">Вакцинація</p>
+                        <button type="button" class="servise__modal-btn-open" data-modal-open>
+                            <svg  width="95" height="100" class="servise__icon">
+                                <use href="./../../image/icons/symbol-defs.svg#icon-syringe"></use>
+                            </svg>
+                            <p class="servise__text">Вакцинація</p>
+                        </button>
                     </li>
                     <li class="servise__list-item ">
                         <svg  width="100" height="100" class="servise__icon">
@@ -177,7 +179,7 @@
 
     <script src="../../../servise.js"></script>
     
-</section>  -->
+</section>  
 
 
 
@@ -185,9 +187,9 @@
 
 
 
+ -->
 
-
-
+<!-- jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj -->
 
 
 
@@ -281,8 +283,8 @@
     </div>
 
 
-    <div class="servise__modal">
-        <button class="servise__modal-btn" type="button">x</button>
+     <div class="servise__modal" data-modal>
+        <button class="servise__modal-btn" type="button" data-modal-close>x</button>
         <h1 class="servise__modal-title">Вакцинація</h1>
         <ul class="servise__modal-list">
             <li class="servise__modal-item">
@@ -354,7 +356,7 @@
                 <p class="servise__modal-text">1800 грн</p>
             </li>
         </ul>
-    </div>
+    </div> 
 
     
 </section> 
