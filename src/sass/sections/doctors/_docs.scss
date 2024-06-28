@@ -1,6 +1,15 @@
 .docs {
-  padding-top: 20px;
+  padding-top: 30px;
+  margin-bottom: 12px;
+
+  @media screen and (min-width: 1306px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1740px) {
+    padding-top: 34px;
   padding-bottom: 53px;
+  }
 
   &__title {
     color: $accent-color;
@@ -18,6 +27,17 @@
     @media screen and (min-width: 1740px) {
       line-height: 110%;
       font-size: 40px;
+    }
+  }
+
+  &__wrap {
+    margin-right: auto;
+    margin-left: auto;
+    width: 342px;
+
+    @media screen and (min-width: 1306px) {
+      width: 100%;
+      margin: 0;
     }
   }
 
@@ -68,10 +88,6 @@
     @media screen and (min-width: 1306px) {
       flex-direction: row;
     }
-
-    @media screen and (min-width: 1740px) {
-
-    }
   }
 
   &__subtitle {
@@ -79,6 +95,20 @@
     font-size: 20px;
     font-weight: 400;
     line-height: normal;
+
+    @media screen and (min-width: 1306px) {
+      font-size: 14.229px;
+    }
+  }
+
+  &__arrow {
+    width: 24px;
+    height: 24px;
+
+    @media screen and (min-width: 1306px) {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   &__subtitle-blue {
@@ -86,6 +116,10 @@
     font-size: 20px;
     font-weight: 400;
     line-height: normal;
+
+    @media screen and (min-width: 1306px) {
+font-size: 14.229px;
+    }
   }
 
   &__nav {
@@ -172,7 +206,7 @@
   }
 
   &__biglist {
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     gap: 0;
@@ -180,7 +214,13 @@
 
     @media screen and (min-width: 1306px) {
       gap: 67px;
-      margin-bottom: 50px;
+      margin-top: 40px;
+      margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 1740px) {
+    margin-top: 50px;
+    margin-bottom: 50px;
     }
   }
 
@@ -197,7 +237,7 @@
 
   &__doctors2 {
     display: none;
-    gap: 54px;
+    gap: 70px;
 
     @media screen and (min-width: 1306px) {
       display: flex;
@@ -220,7 +260,6 @@
     align-items: flex-start;
 
     @media screen and (min-width: 1740px) {
-      align-items: center;
     }
   }
 
@@ -249,14 +288,5 @@
     fill: transparent;
   }
 
-  &__wrap {
-    margin-right: auto;
-    margin-left: auto;
-    width: 300px;
-
-    @media screen and (min-width: 1306px) {
-      width: 100%;
-      margin: 0;
-    }
-  }
+  
 }
