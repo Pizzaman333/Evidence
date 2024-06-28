@@ -130,14 +130,27 @@ font-size: 14.229px;
 
     @media screen and (min-width: 1306px) {
       display: flex;
+      margin-top: 16px;
+    }
+
+    @media screen and (min-width: 1740px) {
+      margin-top: 32px;
     }
   }
 
   &__occupation {
     color: $accent-color;
-    font-size: 32px;
     font-weight: 400;
-    line-height: 137.5%;
+
+    @media screen and (min-width: 1306px) {
+      font-size: 24px;
+      line-height:  133.333%; 
+    }
+
+    @media screen and (min-width: 1740px) {
+    font-size: 32px;
+      line-height: 137.5%;
+    }
   }
 
   &__list {
@@ -147,6 +160,13 @@ font-size: 14.229px;
 
     @media screen and (min-width: 1306px) {
       display: flex;
+      margin-top: 16px;
+      gap: 23px;
+    }
+
+    @media screen and (min-width: 1740px) {
+      margin-top: 32px;
+      gap: 32px;
     }
   }
 
@@ -171,11 +191,9 @@ font-size: 14.229px;
     font-size: 16px;
 
     @media screen and (min-width: 1306px) {
-      width: 220px;
     }
 
     @media screen and (min-width: 1740px) {
-      width: 300px;
       font-size: 24px;
       line-height: normal;
       font-family: "Open Sans";
@@ -190,10 +208,11 @@ font-size: 14.229px;
     line-height: 137.5%;
 
     @media screen and (min-width: 1306px) {
+font-size: 17.075px;
+line-height: normal;
     }
 
     @media screen and (min-width: 1740px) {
-      line-height: normal;
       font-size: 24px;
     }
   }
@@ -203,6 +222,7 @@ font-size: 14.229px;
   &__doctors3 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   &__biglist {
@@ -214,30 +234,30 @@ font-size: 14.229px;
 
     @media screen and (min-width: 1306px) {
       gap: 67px;
-      margin-top: 40px;
+      margin-top: 44px;
       margin-bottom: 16px;
     }
 
     @media screen and (min-width: 1740px) {
-    margin-top: 50px;
+    margin-top:57px;
     margin-bottom: 50px;
     }
   }
 
   &__doctors1 {
-    gap: 32px;
+    // gap: 32px; 
     flex-direction: column;
     align-items: center;
 
     @media screen and (min-width: 1306px) {
-      gap: 146px;
+      // gap: 146px;
       flex-direction: row;
     }
   }
 
   &__doctors2 {
     display: none;
-    gap: 70px;
+    // gap: 70px;
 
     @media screen and (min-width: 1306px) {
       display: flex;
@@ -246,7 +266,7 @@ font-size: 14.229px;
 
   &__doctors3 {
     display: none;
-    gap: 90px;
+    // gap: 90px;
 
     @media screen and (min-width: 1306px) {
       display: flex;
@@ -260,6 +280,7 @@ font-size: 14.229px;
     align-items: flex-start;
 
     @media screen and (min-width: 1740px) {
+      align-items: center;
     }
   }
 
@@ -274,18 +295,34 @@ font-size: 14.229px;
     gap: 14px;
     font-family: Montserrat;
 
+    @media screen and (min-width: 1306px) {
+font-family: "Open Sans";
+font-size: 22.767px;
+font-weight: 400;
+line-height: 137.5%;
+justify-content: center;
+    }
+
     @media screen and (min-width: 1740px) {
-      font-family: "Open Sans";
-      line-height: 137.5%;
       font-size: 32px;
-      font-weight: 400;
-      justify-content: center;
     }
   }
 
   &__icon {
     stroke: $accent-color;
     fill: transparent;
+    width: 24px;
+    height: 24px;
+
+    @media screen and (min-width: 1306px) {
+      width: 20px;
+      height: 20px;
+          }
+      
+          @media screen and (min-width: 1740px) {
+          width: 24px;
+          height: 24px;
+          }
   }
 
   

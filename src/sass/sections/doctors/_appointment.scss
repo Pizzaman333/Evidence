@@ -8,10 +8,10 @@
 
     @media screen and (min-width: 1306px) {
       flex-direction: row;
+      justify-content: space-between;
     }
 
     @media screen and (min-width: 1740px) {
-      gap: 178px;
     }
   }
 
@@ -44,6 +44,8 @@
     width: 391px;
     @media screen and (min-width: 1306px) {
       width: 588px;
+      border-radius: 0;
+      border: none;
     }
 
     @media screen and (min-width: 1740px) {
