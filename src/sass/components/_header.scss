@@ -76,7 +76,13 @@
   }
 
   &__link {
-    @include font($font-weight: 400, $font-size: 20px);
+    @media screen and (min-width: 1306px) {
+      @include font($font-weight: 400, $font-size: 14.2px );
+      line-height: 31.3px;
+    }
+
+    @media screen and (min-width: 1740px) {
+      @include font($font-weight: 400, $font-size: 20px);
     color: $main-text-color;
     line-height: 44px;
 
@@ -84,11 +90,12 @@
     &:focus {
       color: $accent-color;
     }
+    }
   }
 
   &__label {
     opacity: 0;
-    transition: opacity 2s cubic-bezier(.91,0,.05,.32);
+    transition: opacity 1s cubic-bezier(.91,0,.05,.32);
   }
 
   &__btn:checked ~ &__label {
@@ -103,11 +110,6 @@
     width: 42px;
     height: 42px;
     opacity: 0;
-    
-    // transition-property: opacity;
-    // transition-duration: 2s;
-    // transition-timing-function: cubic-bezier(.91,0,.05,.32);
-
   }
 
   &__form {
@@ -124,11 +126,18 @@
     @media screen and (min-width: 1306px) {
       display: flex;
       position: absolute;
+      top: 41px;
+      right: 41px;
+      width: 30px;
+      height: 30px;
+      stroke: $accent-color;
+    }
+
+    @media screen and (min-width: 1740px) {
       top: 52px;
       right: 80px;
       width: 42px;
       height: 42px;
-      stroke: $accent-color;
     }
   }
 
