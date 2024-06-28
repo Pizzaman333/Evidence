@@ -1,0 +1,106 @@
+.call {
+    position: fixed;
+    top: 50%;
+    left: calc((100% - 390px)/2);
+    width: 391px;
+    height: 293px;
+    background: #ECEFF7;
+    padding: 66px 24px 37px;
+    box-shadow: 0px 0px 26px 0px $accent-color;
+
+    @media screen and (min-width: 1306px) {
+       display: none;
+      }
+
+    &__cross {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: $accent-color;
+    }
+
+    &__title {
+        color: $accent-color;
+font-size: 16px;
+font-weight: 400;
+line-height: 137.5% ;
+text-align: center;
+margin-bottom: 14px;
+    }
+
+    &__input {
+        border-radius: 40px;
+border: 1px solid #72B7F2;
+background: #FFF;
+width: 342px;
+height: 46px;
+padding-left: 16px;
+margin-bottom: 16px;
+
+&::placeholder {
+    color:  #9C9696;
+font-size: 16px;
+font-weight: 400;
+line-height:  137.5%;
+}
+    }
+
+    &__button {
+        color: #FFF;
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 700;
+line-height: 112.5%;
+        border-radius: 50px;
+background: $btn-bg;
+width: 342px;
+height: 46px;
+    }
+
+    &__timer {
+        margin-top: 24px;
+        text-align: center;
+        color: $accent-color;
+font-size: 16px;
+font-weight: 400;
+line-height:  137.5% ;
+
+&-big {
+font-size: 20px;
+font-weight: 600;
+}
+    }
+
+&__btn {
+    position: fixed;
+    right: calc((100% - 381px)/2);
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+border: 1px solid #83A9C9;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0;
+
+@media screen and (min-width: 1306px) {
+    display: none;
+   }
+}
+
+&__cirkle {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+border: 1px solid $accent-color;
+background: $light-blue;
+}
+
+&__icon {
+    margin-left: 5px;
+    margin-top: 7px;
+    stroke: $accent-color;
+    fill: none;
+}
+}
