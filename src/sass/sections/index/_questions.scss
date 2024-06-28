@@ -46,8 +46,6 @@
         border-radius: 50px;
         margin-right: 39px;
         gap: 4px;
-
-
         
         @media screen and (min-width: 1306px) {
             gap: 40px;
@@ -86,10 +84,11 @@
            @media screen and (min-width: 1740px) {
             font-size: 32px;
             line-height: 44px;
-            width: 291px;
+            width: 312px;
            }
     }
 
+    
     &__icon-doctor-child {
         display: block;
 
@@ -107,6 +106,9 @@
 
         @media screen and (min-width: 1306px) {
             display: block;
+            // display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
          }
  
            @media screen and (min-width: 1740px) {
@@ -114,37 +116,50 @@
            }
     }
 
+
     &__open-item {
         display: flex;
         align-items: center;
-        border-bottom: solid $accent-color 1px;
+        border: solid 1px rgba(250, 250, 250, 0.20);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
 
         @media screen and (min-width: 1306px) {
-            margin-bottom: 24px;
-            padding-bottom: 24px;
             width: 748px;
          }
  
            @media screen and (min-width: 1740px) {
-            margin-bottom: 32px;
-            padding-bottom: 32px;
             width: 1052px;
            }
     }
+
+   
 
     &__open-link {
         color: $accent-color;
         font-family: "Open Sans";
         font-weight: 600;
+        // border-bottom: solid $accent-color 1px;
+
+        
+        // background-color: rgb(113, 129, 89);
 
         @media screen and (min-width: 1306px) {
             font-size: 23px;
+            padding-top: 24px;
+            padding-bottom: 24px;
          }
  
            @media screen and (min-width: 1740px) {
             font-size: 32px;
+            padding-top: 32px;
+            padding-bottom: 32px;
            }
     }
+
+    
+
 
     &__icon {
         // display: flex;
@@ -164,8 +179,21 @@
             margin-right: 32px;
            }
     }
-    
-}
+
+
+
+// &__text{
+    //     font-weight: 500;
+    //     font-size: 16px;
+    //     line-height: 150%;
+    //     letter-spacing: -0.02em;
+    //     color: red;
+    //     width: 343px;
+
+    //     @media screen and (min-width: 768px) {
+    //         width: 656px;
+    //     }
+    // }
 
 
 
@@ -173,34 +201,12 @@
 
 
 
+    // probaaa
 
 
 
 
 
-
-.faq {
-    background-color: hsl(225, 7%, 12%);
-    padding-top: 0;
-
-    @media screen and (min-width: 1200px) {
-
-        min-height: 388px;
-    }
-
-    &__title {
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 150%;
-        letter-spacing: -0.02em;
-        text-transform: uppercase;
-        color: red;
-        margin-bottom: 16px;
-
-        @media screen and (min-width: 1200px) {
-            margin-bottom: 32px;
-        }
-    }
 
     &__input {
         position: absolute;
@@ -214,85 +220,30 @@
         transition: all 0.35s;
     }
 
-    &__text{
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 150%;
-        letter-spacing: -0.02em;
-        color: red;
-        width: 343px;
 
-        @media screen and (min-width: 768px) {
-            width: 656px;
-        }
+    
+
+    &__open-item input:checked ~ .qestion__paragraph {
+        max-height: 670px;
+        // vusota usogo 
     }
 
-    &__list{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
+    
 
-        @media screen and (min-width:1200px) {
-            flex-direction: row;
-        }
-    }
-
-    &__item input:checked ~ .faq__paragraph {
-        max-height: 100px;
-    }
-
-    &__item{
-        border: solid 1px rgba(250, 250, 250, 0.20);
-        padding-top: 20px;
-        padding-left: 4px;
-        padding-bottom: 20px;
-
-        @media screen and (min-width: 768px) {
-            padding-left: 32px;
-            padding-top: 32px;
-            flex-basis: calc((100% - 0px) / 1);
-        }
-
-        @media screen and (min-width: 1200px){
-            flex-basis: calc((100% - 0px) / 2);
-        }
-    }
-
-    &__item:nth-child(1){
-        padding-left: 4px;
-
-        @media screen and (min-width: 1200px) {
-            padding-left: 32px;
-        }
-    }
-
-    &__item:nth-child(3) {
-        padding-left: 4px;
-        
-        @media screen and (min-width: 1200px) {
-            padding-left: 32px;
-        }
-    }
-
-    &__item:nth-child(5) {
-        padding-left: 4px;
-        
-        @media screen and (min-width: 1200px) {
-            padding-left: 32px;
-        }
-    }
+    // 
 
     &__subtitle {
         display: flex;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 150%;
-        letter-spacing: -0.02em;
-        color: green;
-        margin-bottom: 26px;
-        text-align: left;
-        align-items: center;
-        padding-right: 20px;
+        
+        // font-weight: 600;
+        // font-size: 20px;
+        // line-height: 150%;
+        // letter-spacing: -0.02em;
+        // color: green;
+        // margin-bottom: 26px;
+        // text-align: left;
+        // align-items: center;
+        // padding-right: 20px;
 
         @media screen and (min-width: 768px) {
             padding-right: 32px;
@@ -302,28 +253,236 @@
 
     &__subtitle::after {
         content: url(./../../image/icons/symbol-defs.svg#icon-plus);
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
         background-color: chartreuse;
         text-align: center;
         transition: all 0.35s;
-        margin-left: auto;
     }
 
-    &__item input:checked + .faq__subtitle::after {
+    &__open-item input:checked + .qestion__subtitle::after {
         content: url(.//image/destop/doctor1@1x.webp);
         width: 30px;
         height: 30px;
         background-color: aqua;
+        transition: all 0.35s;
+        margin-left: 100px
+        
     }
 
-    &__item input:checked + .faq__line-left {
+    &__open-item input:checked + .qestion__line-left {
         display: none;
     }
     
+    &__paragraph {
+        border-bottom: solid orangered 3px;
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            width: 748px;
+            display: block;
+        }
+
+        @media screen and (min-width: 1740px) {
+            width: 1052px;
+        }
+    }
 
     &__paragraph p {
-        padding-bottom: 26px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+
+
+    &__choice-list {
+        margin-top: 35px;
+        width: 650px;
+    }
+
+    &__choice-text {
+        color: #3A3B3D;
+        font-family: "Open Sans";
+        font-size: 22.767px;
+        font-weight: 500;
     }
 }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .faq {
+//     background-color: hsl(225, 7%, 12%);
+   
+
+//     &__title {
+//         font-weight: 600;
+//         font-size: 16px;
+//         line-height: 150%;
+//         letter-spacing: -0.02em;
+//         text-transform: uppercase;
+//         color: red;
+//         margin-bottom: 16px;
+
+       
+//     }
+
+//     &__input {
+//         position: absolute;
+//         opacity: 0;
+//         z-index: -1;
+//     }
+
+//     &__paragraph {
+//         max-height: 0;
+//         overflow: hidden;
+//         transition: all 0.35s;
+//     }
+
+//     &__text{
+//         font-weight: 500;
+//         font-size: 16px;
+//         line-height: 150%;
+//         letter-spacing: -0.02em;
+//         color: red;
+//         width: 343px;
+
+//         @media screen and (min-width: 768px) {
+//             width: 656px;
+//         }
+//     }
+
+//     &__list{
+//         display: flex;
+//         flex-wrap: wrap;
+//         flex-direction: column;
+
+//         @media screen and (min-width:1200px) {
+//             flex-direction: row;
+//         }
+//     }
+
+//     &__item input:checked ~ .faq__paragraph {
+//         max-height: 100px;
+//     }
+
+//     &__item{
+//         border: solid 1px rgba(250, 250, 250, 0.20);
+//         padding-top: 20px;
+//         padding-left: 4px;
+//         padding-bottom: 20px;
+
+//         @media screen and (min-width: 768px) {
+//             padding-left: 32px;
+//             padding-top: 32px;
+//             flex-basis: calc((100% - 0px) / 1);
+//         }
+
+//         @media screen and (min-width: 1200px){
+//             flex-basis: calc((100% - 0px) / 2);
+//         }
+//     }
+
+//     &__item:nth-child(1){
+//         padding-left: 4px;
+
+//         @media screen and (min-width: 1200px) {
+//             padding-left: 32px;
+//         }
+//     }
+
+//     &__item:nth-child(3) {
+//         padding-left: 4px;
+        
+//         @media screen and (min-width: 1200px) {
+//             padding-left: 32px;
+//         }
+//     }
+
+//     &__item:nth-child(5) {
+//         padding-left: 4px;
+        
+//         @media screen and (min-width: 1200px) {
+//             padding-left: 32px;
+//         }
+//     }
+
+//     &__subtitle {
+//         display: flex;
+//         font-weight: 600;
+//         font-size: 20px;
+//         line-height: 150%;
+//         letter-spacing: -0.02em;
+//         color: green;
+//         margin-bottom: 26px;
+//         text-align: left;
+//         align-items: center;
+//         padding-right: 20px;
+
+//         @media screen and (min-width: 768px) {
+//             padding-right: 32px;
+//         }
+//     }
+
+
+//     &__subtitle::after {
+//         content: url(./../../image/icons/symbol-defs.svg#icon-plus);
+//         width: 40px;
+//         height: 40px;
+//         background-color: chartreuse;
+//         text-align: center;
+//         transition: all 0.35s;
+//         margin-left: auto;
+//     }
+
+//     &__item input:checked + .faq__subtitle::after {
+//         content: url(.//image/destop/doctor1@1x.webp);
+//         width: 30px;
+//         height: 30px;
+//         background-color: aqua;
+//     }
+
+//     &__item input:checked + .faq__line-left {
+//         display: none;
+//     }
+    
+
+//     &__paragraph p {
+//         padding-bottom: 26px;
+//     }
+// }
+
+//&__item:nth-child(1){
+    //     padding-left: 4px;
+
+    //     @media screen and (min-width: 1200px) {
+    //         padding-left: 32px;
+    //     }
+    // }
+
+    // &__item:nth-child(3) {
+    //     padding-left: 4px;
+        
+    //     @media screen and (min-width: 1200px) {
+    //         padding-left: 32px;
+    //     }
+    // }
+
+    // &__item:nth-child(5) {
+    //     padding-left: 4px;
+        
+    //     @media screen and (min-width: 1200px) {
+    //         padding-left: 32px;
+    //     }
+    // }
 
