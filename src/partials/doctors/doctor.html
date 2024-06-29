@@ -1,0 +1,54 @@
+<section class="doctor is-hidden" data-doctor>
+  <div class="container">
+    <button class="doctor__btn" data-doctor-close>
+      <svg class="doctor__cross" width="26px" height="24px">
+        <use href="../../image/icons/symbol-defs.svg#icon-cross"></use>
+      </svg>
+    </button>
+    <picture>
+        <source
+          srcset="
+          ../../image/destop/doctor-desktop@1x.webp 1x,
+          ../../image/destop/doctor-desktop@2x.webp 2x
+          "
+          media="(min-width: 1740px)"
+        />
+        <source
+          srcset="
+          ../../image/tablet/doctor-tablet@1x.webp 1x,
+          ../../image/tablet/doctor-tablet@2x.webp 2x
+          "
+          media="(min-width: 1306px)"
+        />
+        <source
+          srcset="
+          ../../image/mobile/doctor-mobile@1x.webp 1x,
+          ../../image/mobile/doctor-mobile@2x.webp 2x
+          "
+          media="(min-width: 310px)"
+        />
+        <img
+          src="../../image/mobile/doctor-mobile@1x.webp"
+          alt="hand"
+          class="doctor__image"
+        />
+      </picture>
+    <div class="doctor__describtion">
+      <h1 class="doctor__title">Демчишин Ярослав Павлович</h1>
+      <p class="doctor__text">
+        <span class="doctor__text-bold">Спеціалізація:</span>Лікар інфекціоніст
+      </p>
+      <p class="doctor__text">
+        <span class="doctor__text-bold">Стаж роботи:</span>5 років
+      </p>
+      <button class="doctor__button" type="button">Записатись на прийом</button>
+    </div>
+    <div class="doctor__info">
+        <h3 class="doctor__information">Робочі години:</h3>
+        <p class="doctor__contacts">Пн, Ср, Пт  </p>
+        <p class="doctor__contacts">08:00 - 16:30</p>
+        <h3 class="doctor__information">Контакти:</h3>
+        <p class="doctor__contacts">Тел. +38097 555 99 99</p>
+    </div>
+  </div>
+</section>
