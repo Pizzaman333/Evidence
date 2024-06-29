@@ -61,8 +61,6 @@
     }
 
     &__first-box {
-        margin-left: auto;
-        margin-right: auto;
         display: flex;
         align-items: center;
         gap: 16px;
@@ -82,6 +80,10 @@
     }
  
     &__first-list {
+        padding-top: 12px;
+        border-top: solid 2px #72B7F2;
+        margin: 0 auto;
+        width: 387px;
         gap: 16px;
         justify-content: center;
         display: flex;
