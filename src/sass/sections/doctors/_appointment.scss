@@ -23,10 +23,12 @@
 
     @media screen and (min-width: 1306px) {
       background: none;
+      width: 444px;
     }
 
     @media screen and (min-width: 1740px) {
       padding-top: 40px;
+      width: 592px;
     }
   }
 
@@ -185,6 +187,15 @@ gap: 14px;
     width: 342px;
     margin-right: auto;
     margin-left: auto;
+
+    @media screen and (min-width: 1306px) {
+     margin: 0;
+     width: 420px;
+                }
+
+                @media screen and (min-width: 1740px) {
+                 width: 591px;
+                            }
   }
 
   &__choose {
