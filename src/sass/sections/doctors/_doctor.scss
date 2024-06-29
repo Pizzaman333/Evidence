@@ -1,0 +1,93 @@
+.doctor {
+  padding-top: 12px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $bg-color;
+
+  &__btn {
+    position: absolute;
+    top: 16px;
+    right: 24px;
+  }
+
+  &__cross {
+    stroke: $accent-color;
+    fill: transparent;
+    width: 20px;
+    height: 20px;
+  }
+
+  &__image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+
+    @media screen and (min-width: 1306px) {
+        width: 180px;
+        height: 180px;
+      }
+  
+      @media screen and (min-width: 1740px) {
+        width: 240px;
+        height: 240px;
+      }
+  }
+
+  &__describtion {
+    width: 342px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 24px;
+  }
+
+  &__title {
+    color: $accent-color;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 112.5%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    color: $main-text-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 137.5%;
+
+    &-bold {
+      color: #000;
+      font-family: "Open Sans";
+      font-weight: 600;
+      margin-right: 18px;
+    }
+  }
+
+  &__text:nth-child(3) {
+    margin-top: 10px;
+  }
+
+  &__text:nth-child(3) &__text-bold {
+    margin-right: 25px;
+  }
+
+  &__button {
+    margin-top: 24px;
+    width: 342px;
+    height: 46px;
+    border-radius: 20px;
+background: $btn-bg;
+color: var(--white-input, #FFF);
+text-align: center;
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 700;
+line-height: 112.5%; 
+  }
+}
