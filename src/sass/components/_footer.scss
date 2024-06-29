@@ -93,6 +93,9 @@
         @media screen and (min-width:1306px) {
             flex-direction: row;
             gap: 140px;
+            width: 100%;
+            padding-top: 0;
+            border: none;
         }
     
         @media screen and (min-width:1740px) {
