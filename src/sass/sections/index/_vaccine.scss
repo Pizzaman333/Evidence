@@ -1,0 +1,135 @@
+.servise {
+
+&__modal-bacdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: $bg-color;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+
+&__modal {
+    height: 910px;
+    width: 1189px;
+    overflow: hidden;
+    border: solid  #2887D9 3px ;
+    border-radius: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    top: 25px;
+    left: calc((100% - 1189px)/2);
+}
+
+// &__modal::-webkit-scrollbar {
+//     padding-top: 20px;
+//     width: 13px;
+//     height: 13px;
+// }
+
+// &__modal::-webkit-scrollbar-thumb {
+//     background: #D0E1F1;/* Колір повзунка */
+//     border-radius: 10px; /* Закруглення кутів */
+// }
+
+&__modal-btn {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+&__modal-cross {
+    fill: transparent;
+    stroke: $accent-color;
+}
+
+&__modal-title {
+    color: #2887D9;
+    font-family: "Open Sans";
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px; /* 137.5% */
+    text-align: center;
+}
+
+&__modal-list  {
+    width: 1058px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    overflow: auto;
+    height: 910px;
+}
+
+&__modal-list::-webkit-scrollbar {
+    width: 13px;
+    height: 20px;
+}
+
+&__modal-list::-webkit-scrollbar-thumb {
+    background: #D0E1F1;/* Колір повзунка */
+    border-radius: 10px; /* Закруглення кутів */
+}
+
+
+
+&__modal-list > &__modal-item:nth-child(1) {
+    color: #2887D9;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 44px; /* 183.333% */
+    background-color: #D0E1F1;
+}
+
+&__modal-list > &__modal-item:nth-child(1) &__modal-text {
+    color: #2887D9;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 44px; /* 183.333% */
+}
+
+&__modal-list > &__modal-item:nth-child(1)  &__modal-subtitle {
+    color: #2887D9;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 44px; /* 183.333% */
+}
+
+
+&__modal-item {
+    display: flex;
+    border-bottom: solid 20px #ffff ;
+    margin-left: 60px;
+}
+
+&__modal-subtitle {
+    color: #3A3B3D;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 60px;
+   
+}
+
+&__modal-text {
+    color: #2887D9;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 44px; /* 220% */
+    display: block;
+    margin-left: auto;
+    padding-right: 96px;
+  
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+}
