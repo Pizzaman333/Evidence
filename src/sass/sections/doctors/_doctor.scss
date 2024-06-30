@@ -8,13 +8,18 @@
   background-color: $bg-color;
   z-index: 4;
   overflow-y: scroll;
+  padding-bottom: 75px;
                            
   &__btn {
     position: absolute;
     top: 16px;
-    right: 24px;
+    right: calc(100%/2 - 172px);
     padding: 0;
     background-color: transparent;
+
+    @media screen and (min-width: 1306px) {
+      right: calc(100%/2 - 375px);
+    }
   }
 
   &__cross {
@@ -170,6 +175,7 @@
     gap: 20px;
 
     @media screen and (min-width: 1306px) {
+      border-radius: 40px;
       margin: 0;
       width: 244px;
       height: 216px;
@@ -183,11 +189,19 @@
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    @media screen and (min-width: 1306px) {
+      gap: 8px;
+    }
   }
 
   &__time {
     display: flex;
     gap: 32px;
+
+    @media screen and (min-width: 1306px) {
+      gap: 30px;
+    }
   }
 
   &__information {
@@ -196,14 +210,24 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 112.5%;
+
+    @media screen and (min-width: 1306px) {
+      font-size: 18.75px;
+      font-weight: 600;
+      line-height: 183.333%; 
+    }
   }
 
   &__contacts {
     color: $main-text-color;
-    font-family: "Open Sans";
     font-size: 16px;
     font-weight: 400;
     line-height: 137.5%;
+
+    @media screen and (min-width: 1306px) {
+font-size: 15.625px;
+line-height: normal;
+    }
   }
 
   &__subtitle {
@@ -217,26 +241,35 @@
 
     @media screen and (min-width: 1306px) {
       margin: 0 0 13px;
+font-size: 18.75px;
+font-weight: 400;
+line-height: 183.333%; 
     }
   }
 
   &__maintext {
     margin-top: 12px;
     width: 326px;
-    // height: 145px;
-    color: var(--gray-maintext, #3a3b3d);
-    font-family: "Open Sans";
+    color: $main-text-color;
     font-size: 16px;
     font-weight: 400;
     line-height: 137.5%;
     margin-left: 8px;
 
     @media screen and (min-width: 1306px) {
+      width: 408px;
       margin-left: 0;
+font-size: 15.625px;
+font-weight: 400;
+line-height: normal;
     }
 
     &-wrap {
       white-space: nowrap;
+
+      @media screen and (min-width: 1306px) {
+        max-width: 408px;
+      }
     }
   }
 
@@ -247,17 +280,57 @@
     text-overflow: ellipsis;
 
     @media screen and (min-width: 1306px) {
-      height: 90px;
+      height: 100%;
+      max-width: 393px;
     }
   }
 
   &__link {
-    color: var(--blue-dark-blue, #2887D9);
-font-family: "Open Sans";
+    display: block;
+    color: $accent-color;
 font-size: 14px;
-font-style: normal;
 font-weight: 700;
 line-height: normal;
 text-decoration-line: underline;
+text-align: right;
+margin-top: 16px;
+margin-right: 8px;
+  }
+
+  &__clients {
+    color: $accent-color;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 112.5% ; 
+    margin-left: 8px;
+    margin-top: 40px;
+  }
+
+  &__reviews {
+    width: 281px;
+    height: 140px;
+    border-radius: 20.627px;
+border: 0.413px solid $btn-bg;
+background-color: #F2F3F5;
+margin-left: auto;
+margin-top: 16px;
+padding: 15.677px 16.089px 16.589px 33.004px;
+position: relative;
+  }
+
+  &__review-img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 30px;
+    left: -61.47px;
+  }
+
+  &__review {
+    color: $main-text-color;
+    font-size: 13.201px;
+    font-weight: 400;
+    line-height: normal;
   }
 }
