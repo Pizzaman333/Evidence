@@ -97,7 +97,7 @@
     }
 
     &__btn {
-        width: 108px;
+        min-width: 108px;
         height: 48px;
         border-radius: 50px;
         background: var(--white-input, #FFF);
