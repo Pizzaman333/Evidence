@@ -1,24 +1,35 @@
 .numbers {
     background:  $bg-color;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding-top: 32px;
+    // padding-bottom: 50px;
     outline: solid black 2px;
+
+    @media screen and (min-width: 1306px) {
+        
+      }  
+
+        @media screen and (min-width: 1740px) {
+            padding-top: 100px;
+            padding-bottom: 50px;
+        }
 
     &__title {
         color: $accent-color;
         font-family: "Open Sans";
         font-size: 16px;
         font-weight: 700;
-        margin-bottom: 50px;
+        margin-bottom: 22px;
+        text-align: center;
 
         @media screen and (min-width: 1306px) {
             font-size: 34.15px;
             font-weight: 600;
             line-height: 31.304px; /* 91.667% */
+            text-align: start;
          }  
  
            @media screen and (min-width: 1740px) {
-               
+            margin-bottom: 50px;
                
            }
     }
@@ -27,9 +38,17 @@
         display: flex;
         flex-wrap: wrap;
         width: 390px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
 
         @media screen and (min-width: 1306px) {
-           width: 1240px;
+            display: start;
+            width: 1240px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: 0;
+            margin-left: 0;
          }  
  
            @media screen and (min-width: 1740px) {
@@ -168,7 +187,7 @@
         font-size: 16px;
         font-weight: 400;
         width: 154px;
-        text-align: start;
+        // text-align: start;
         margin-bottom: 19px;
         margin-left: auto;
 
