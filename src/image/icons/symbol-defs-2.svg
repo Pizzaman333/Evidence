@@ -12,5 +12,10 @@
 <symbol id="icon-modal-close" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.1818" d="M11.884 20.116l8.233-8.233M20.116 20.116l-8.233-8.233M11.636 30.545h8.727c7.273 0 10.182-2.909 10.182-10.182v-8.727c0-7.273-2.909-10.182-10.182-10.182h-8.727c-7.273 0-10.182 2.909-10.182 10.182v8.727c0 7.273 2.909 10.182 10.182 10.182z"></path>
 </symbol>
+<symbol id="icon-global" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M16 29.333c7.364 0 13.333-5.969 13.333-13.333s-5.969-13.333-13.333-13.333c-7.364 0-13.333 5.969-13.333 13.333s5.969 13.333 13.333 13.333z"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M10.666 4h1.333c-2.6 7.789-2.6 16.211 0 24h-1.333M19.999 4c2.6 7.789 2.6 16.211 0 24"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M4 21.333v-1.333c7.789 2.6 16.211 2.6 24 0v1.333M4 11.999c7.789-2.6 16.211-2.6 24 0"></path>
+</symbol>
 </defs>
 </svg>
