@@ -1,14 +1,16 @@
 <div class="registration">
     <div class="container">
-        <svg class="registration__dugger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M9.17 14.83L14.83 9.17M14.83 14.83L9.17 9.17M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#72B7F2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <button class="regestration__close">
+            <svg class="registration__dugger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M9.17 14.83L14.83 9.17M14.83 14.83L9.17 9.17M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#72B7F2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
         <h2 class="registration__title">
             Особистий кабінет
         </h2>
         <ul class="registration__list">
             <li>
-                <p class="registration__text">
+                <p class="registration__text1">
                     Вхід
                 </p>
             </li>
@@ -18,7 +20,8 @@
                 </p>
             </li>
         </ul>
-        <label for="PIB">ПІБ:</label>
+        
+        <label class="registration__label" for="PIB">ПІБ:</label>
         <input id="PIB" class="registration__input" type="text">
         <p  class="registration__text">Дата народження:</p>
         <ul class="registration__button-list">
@@ -39,37 +42,49 @@
             </li>
         </ul>
         <p class="registration__text">Стать:</p>
-        <label for="">жіноча</label>
-        <input class="registration__input" type="checkbox" name="" id="">
 
-        <label for="">чоловіча</label>
-        <input class="registration__circle-input" type="checkbox" name="" id="">
+        <div class="input-box">
+            <div class="input-label-box">
+                <label class="registration__label-circel" for="customChekbox">жіноча</label>
+            <input class="registration__circle-input" type="checkbox" name="" id="customChekbox">
+            </div>
+            
+            <div class="input-label-box"><label class="registration__label-circel" for="customChekbox">чоловіча</label>
+                <input class="registration__circle-input" type="checkbox" name="" id="customChekbox">
+            </div>
+        </div>
+        
 
         <label for="">Телефон</label>
-        <input class="registration__circle-input" type="text" name="" id="">
+        <input class="registration__input" type="text" name="" id="">
 
         <label for="">Адреса e-mail:</label>
         <input class="registration__input" type="text" name="" id="">
 
-        <label for="">Пароль:
-            (Пароль повинен бути не менше 6 симфолів довжиною.)</label>
-        <input class="registration__input" type="text" name="" id="">
-        <svg class="registration__icon">
-            <use href="../../image/icons/symbol-defs.svg#icon-Eye"></use>
-        </svg>
+        <div class="input-icon-box">
+            <label for="">Пароль: (Пароль повинен бути не менше 6 симфолів довжиною.)</label>
+            <input placeholder="*******" class="registration__input" type="text" name="" id="">
+            <svg class="registration__icon1">
+                <use href="../../image/icons/symbol-defs.svg#icon-Eye"></use>
+            </svg>
+        </div>
+        
 
-        <label for="">Підтвердження пароля:</label>
-        <input class="registration__input" type="text" name="" id="">
-        <svg class="registration__icon">
-            <use href="../../image/icons/symbol-defs.svg#icon-Eye"></use>
-        </svg>
+        <div class="input-icon-box">
+            <label for="">Підтвердження пароля:</label>
+            <input placeholder="*******" class="registration__input" type="text" name="" id="">
+            <svg class="registration__icon1">
+                <use href="../../image/icons/symbol-defs.svg#icon-Eye"></use>
+            </svg>
+        </div>
+        
 
         <button class="registration__button">Зареєструватися</button>
 
         <div class="registration__box">
-            <p class="registration__text">Або увійти через
+            <p class="registration__text2">Або увійти через
                 соцмережі</p>
-            <u class="registration__icon-box">
+            <ul class="registration__icon-box">
                 <li>
                     <svg class="registration__icon">
                         <use href="../../image/icons/symbol-defs.svg#icon-Google-logo"></use>
@@ -80,7 +95,7 @@
                         <use href="../../image/icons/symbol-defs.svg#icon-facebook-logo"></use>
                     </svg>
                 </li>
-            </u>
+            </ul>
         </div>
     </div>
 </div>
