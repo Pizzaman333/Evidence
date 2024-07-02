@@ -1,6 +1,6 @@
 .doctors {
     background:  $bg-color;
-    position: relative;
+    // position: relative;
     outline: solid red 2px;
     // width: 420px;
 
@@ -19,11 +19,13 @@
     }
 
     &__wraper-number {
+        
         border-radius: 50px;
        
         @media screen and (min-width: 1306px) {
             border: 1px solid #A4CEF5;
-            margin-left: 70px;
+            // margin-left: 70px;
+            margin-left: 170px;
         }
         @media screen and (min-width: 1740px) {
             margin-left: 87px;
@@ -59,6 +61,7 @@
     }
 
     &__list {
+        position: relative;
         // border: 2px solid  #72B7F2;
     }
 
@@ -79,14 +82,14 @@
         @media screen and (min-width: 1306px) {
             width: 180px;
             height: 180px;
-            top: 68px;
+            top: -52px;
             left: 700px;
          }
  
            @media screen and (min-width: 1740px) {
             width: 270px;
             height: 270px;
-            top: 94px;
+            top: -106px;
             left: 980px;
            }
     }
@@ -104,14 +107,14 @@
             width: 300px;
             height: 300px;
             display: block;
-            top: 240px;
+            top: 120px;
             left: 890px;
          }
  
            @media screen and (min-width: 1740px) {
             width: 391px;
             height: 398px;
-            top: 342px;
+            top: 142px;
             left: 1260px;
            }
     }
@@ -128,14 +131,14 @@
         @media screen and (min-width: 1306px) {
             width: 180px;
             height: 180px;
-            top: 52px;
+            top: -68px;
             left: 1073px;
          }
  
            @media screen and (min-width: 1740px) {
             width: 266px;
             height: 270px;
-            top: 72px;
+            top: -128px;
             left: 1515px;
            }
     }
@@ -204,6 +207,26 @@
            }
     }
 
+    &__subtitle-text {
+        color: #D1A4BC;
+        font-size: 16px;
+        font-weight: 400;
+        position: absolute;
+        top: 30px;
+        left: 300px;
+
+        @media screen and (min-width: 1306px) {
+            top: 30px;
+            left: 350px;
+            font-size: 23px;
+         }
+ 
+           @media screen and (min-width: 1740px) {
+            top: 60px;
+            left: 480px;
+            font-size: 25px;
+           }
+    }
 
     &__btn {
         display: flex;
@@ -227,7 +250,7 @@
             height: 56px;
             font-weight: 400;
             font-size: 22px;
-            margin-left: 84px;
+            margin-left: 180px;
             margin-right: 0;
             margin-bottom: 192px;
          }
@@ -239,6 +262,21 @@
             font-size: 32px;
             margin-bottom: 224px;
             margin-left: 97px;
+           }
+    }
+
+    &__conainer-justif {
+        position: relative;
+        width: 342px;
+        margin-right: auto;
+        margin-left: auto;
+
+        @media screen and (min-width: 1306px) {
+            width: 100%;
+         }
+
+         @media screen and (min-width: 1740px) {
+           
            }
     }
     

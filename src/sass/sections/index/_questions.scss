@@ -1,6 +1,6 @@
 .qestion {
         background:  $bg-color;
-        padding-top: 33px;
+        padding-top: 24px;
         padding-bottom: 55px;
         outline: solid yellow 2px;
 
@@ -21,31 +21,53 @@
         font-style: normal;
         font-weight: 600;
         line-height: 44px; /* 91.667% */
-        margin-bottom: 20px;
+        text-align: center;
+        display: none;
+        // margin-bottom: 20px;
+
 
         @media screen and (min-width: 1306px) {
+            display: block;
             font-size: 34px;
-            margin-bottom: 24px;
+            text-align: start;
+            // margin-bottom: 24px;
          }
  
            @media screen and (min-width: 1740px) {
-            margin-bottom: 74px;
+            // margin-bottom: 74px;
             font-size: 48px;
            }
     }
 
-    &__wrapper {
-        display: flex;
+    &__title-first {
+        display: block;
+        color: $accent-color;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 44px; /* 91.667% */
+
+        @media screen and (min-width: 1306px) {
+            display: none;
+         }
     }
 
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
     
 
     &__first-link {
         display: flex;
         flex-direction: column;
         border-radius: 50px;
+        margin-bottom: 20px;
         margin-right: 39px;
         gap: 4px;
+        // margin-left: auto;
+        // margin-right: auto;
+        
         
         @media screen and (min-width: 1306px) {
             gap: 40px;
@@ -54,6 +76,8 @@
             height: 1042.998px;
             padding: 40px;
             margin-right: 120px;
+            margin-left: 0;
+            margin-top: 24px;
          }
  
            @media screen and (min-width: 1740px) {
@@ -64,6 +88,7 @@
             width: 449px;
             height: 1466px;
             margin-right: 125px;
+            margin-top: 74px;
            }
     }
 
@@ -86,6 +111,10 @@
             line-height: 44px;
             width: 312px;
            }
+    }
+
+    &__link:hover {
+        color: #2887D9;
     }
 
     
@@ -124,6 +153,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        position: relative;
 
         @media screen and (min-width: 1306px) {
             width: 748px;
@@ -245,25 +275,34 @@
         // align-items: center;
         // padding-right: 20px;
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1306px) {
             padding-right: 32px;
         }
     }
 
 
     &__subtitle::after {
-        content: url(./../../image/icons/symbol-defs.svg#icon-plus);
+        content: url(../../../image/destop/plus.webp);
         width: 30px;
         height: 30px;
         background-color: chartreuse;
         text-align: center;
+        align-items: center;
         transition: all 0.35s;
+        position: absolute;
+        top: 30px;
+        right: 50px;
+
     }
 
     &__open-item input:checked + .qestion__subtitle::after {
-        content: url(.//image/destop/doctor1@1x.webp);
+        content: url(../../../image/destop/minus.webp);
         width: 30px;
         height: 30px;
+        display: flex;
+        text-align: center;
+        // align-items: center;
+        justify-content: center;
         background-color: aqua;
         transition: all 0.35s;
         margin-left: 100px
@@ -275,10 +314,11 @@
     }
     
     &__paragraph {
-        border-bottom: solid orangered 3px;
+        border-bottom: solid $accent-color 1px;
         display: none;
+        
 
-        @media screen and (min-width: 768px) {
+        @media screen and (min-width: 1306px) {
             width: 748px;
             display: block;
         }
@@ -289,8 +329,16 @@
     }
 
     &__paragraph p {
-        padding-bottom: 20px;
+        
         padding-left: 20px;
+
+        @media screen and (min-width: 1306px) {
+            padding-bottom: 10px;
+        }
+
+        @media screen and (min-width: 1740px) {
+            padding-bottom: 20px;
+        }
     }
 
 
@@ -305,6 +353,17 @@
         font-size: 22.767px;
         font-weight: 500;
     }
+
+    &__art {
+        width: 150px;
+        height: 150px;
+        display: block;
+
+        @media screen and (min-width: 1306px) {
+            display: none;
+        }
+    }
+   
 }
     
 

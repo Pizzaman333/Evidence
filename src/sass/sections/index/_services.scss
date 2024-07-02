@@ -1,8 +1,16 @@
 .servise {
     position: relative;
-    padding-bottom: 32px;
+    padding-bottom: 15px;
     background:  $bg-color;
     outline: solid darkblue 2px;
+    
+    @media screen and (min-width: 1306px) {
+        padding-bottom: 60px;
+     }
+
+       @media screen and (min-width: 1740px) {
+        padding-bottom: 32px;
+       }
 
     &__title {
         color: $accent-color;
@@ -10,10 +18,12 @@
         font-size: 16px;
         font-weight: 600;
         line-height: 44px; /* 91.667% */
+        text-align: center;
 
         @media screen and (min-width: 1306px) {
             font-size: 34px;
             margin-bottom: 68px;
+            text-align: start;
          }
  
            @media screen and (min-width: 1740px) {
@@ -32,13 +42,14 @@
             flex-wrap: wrap;
             width: 1160px;
             gap: 65px;
-            height: 526px;
+            // height: 526px;
          }
  
            @media screen and (min-width: 1740px) {
             gap: 92px;
             width: 1718px;
             // height: 594px;
+
            }
     }
 
@@ -63,6 +74,11 @@
             width: 270px;
             height: 270px;
            }
+    }
+
+    &__list-item:hover {
+        border: 0.474px solid #72B7F2;
+        background: #F3DFEA;
     }
 
 // ten-media
@@ -136,102 +152,7 @@
 
     // modal 
 
-    &__modal {
-        height: 910px;
-        width: 1189px;
-        overflow: auto;
-        border: solid  #2887D9 3px ;
-        border-radius: 50px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        // position: fixed;
-        // top: 0;
-        // left: 0;
-    }
-
-    &__modal::-webkit-scrollbar {
-        width: 13px;
-        height: 13px;
-    }
-
-    &__modal::-webkit-scrollbar-thumb {
-        background: #D0E1F1;/* Колір повзунка */
-        border-radius: 10px; /* Закруглення кутів */
-    }
-
-    &__modal-title {
-        color: #2887D9;
-        font-family: "Open Sans";
-        font-size: 32px;
-        font-weight: 600;
-        line-height: 44px; /* 137.5% */
-        text-align: center;
-    }
-
-    &__modal-list  {
-        width: 1058px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
-    }
-    
-
-    &__modal-list > &__modal-item:nth-child(1) {
-        color: #2887D9;
-        font-family: "Open Sans";
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 44px; /* 183.333% */
-        background-color: #D0E1F1;
-    }
-
-    &__modal-list > &__modal-item:nth-child(1) &__modal-text {
-        color: #2887D9;
-        font-family: "Open Sans";
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 44px; /* 183.333% */
-    }
-
-    &__modal-list > &__modal-item:nth-child(1)  &__modal-subtitle {
-        color: #2887D9;
-        font-family: "Open Sans";
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 44px; /* 183.333% */
-    }
-    
-
-    &__modal-item {
-        display: flex;
-        border-bottom: solid 20px #ffff ;
-        margin-left: 60px;
-    }
-
-    &__modal-subtitle {
-        color: #3A3B3D;
-        font-family: "Open Sans";
-        font-size: 24px;
-        font-weight: 400;
-        margin-left: 60px;
-       
-    }
-
-    &__modal-text {
-        color: #2887D9;
-        font-family: "Open Sans";
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 44px; /* 220% */
-        display: block;
-        margin-left: auto;
-        padding-right: 96px;
-      
-        padding-top: 8px;
-        padding-bottom: 8px;
-    }
+   
 }
 
 
@@ -309,7 +230,8 @@ input[type="radio"] {
 #slide2:checked ~ .servise__navigation label[for="slide2"],
 #slide3:checked ~ .servise__navigation label[for="slide3"],
 #slide4:checked ~ .servise__navigation label[for="slide4"] {
-    background-color: palevioletred;
+    // background-color: palevioletred;
+    background-color: #2887D9;
 
     @media screen and (min-width: 1306px) {
         display: none;
@@ -323,17 +245,22 @@ input[type="radio"] {
         position: relative;
         overflow: hidden;
         border: solid palegreen 3px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
 
         @media screen and (min-width: 1306px) {
-            
+            display: start;
+            margin-left: 0;
+            margin-right: 0;
             width: 1225px;
-            height: 500px;
-            overflow: none;
+            height: 430px;
+            overflow: visible;
          }
  
            @media screen and (min-width: 1740px) {
             width: 1740px;
-            height: 800px;
+            height: 670px;
            }
     }
 
