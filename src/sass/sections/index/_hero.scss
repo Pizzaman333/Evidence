@@ -2,62 +2,54 @@
   background-color: $bg-color;
   background-image: url(../../../image/mobile/hero-bg@1x.webp);
   background-repeat: no-repeat;
-  background-position: 120px 0;
-  // background-size: contain;
-  
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  background-image: url(../../../image/mobile/hero-bg@2x.webp);
-}
-
-@media screen and (min-width: 1306px) {
- background-image: url(../../../image/tablet/hero-bg@1x.webp);
-  background-position: 790px 0;
-  padding-bottom: 90px;
+  background-position-y: 55px;
+  background-size: contain;
+  background-position-x: calc(100% / 2 + 102px);
+  border-bottom: 0.7px solid $btn-bg;
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  background-image: url(../../../image/tablet/hero-bg@2x.webp);
-}
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../../image/mobile/hero-bg@2x.webp);
+    background-size: contain;
+  }
 
-@media screen and (min-width: 1740px) {
- background-image: url(../../../image/destop/hero-bg@1x.webp);
-  background-position: 1044px 0;
-  padding-bottom: 69px;
+  @media screen and (min-width: 1306px) {
+    background-image: url(../../../image/tablet/hero-bg@1x.webp);
+    background-position: 790px 0;
+    padding-bottom: 90px;
+  }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  background-image: url(../../../image/destop/hero-bg@2x.webp);
-}
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../../image/tablet/hero-bg@2x.webp);
+    background-size: contain;
+  }
 
-   &__box::before {
-    content: "";
-    display: block;
-    width: 172px;
-height: 1px;
-background: #72B7F2;
-position: absolute;
-top: 593px;
-left: -50px;
+  @media screen and (min-width: 1740px) {
+    background-image: url(../../../image/destop/hero-bg@1x.webp);
+    background-position: 1044px 0;
+    padding-bottom: 69px;
+  }
 
-@media screen and (min-width: 1306px) {
-display: none;
-}
- }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../../image/destop/hero-bg@2x.webp);
+    background-size: contain;
+  }
 
   &__title {
-    @include font($font-weight: 700, $font-size: 64px );
-      padding-top: 84px;
-      margin-bottom: 8px;
-      line-height: 64px;
-      color: transparent;
-      -webkit-text-stroke: 1px $btn-bg;
-    
+    @include font($font-weight: 700, $font-size: 64px);
+    padding-top: 55px;
+    margin-bottom: 8px;
+    line-height: 64px;
+    color: transparent;
+    -webkit-text-stroke: 1px $btn-bg;
+
     @media screen and (min-width: 1306px) {
-      @include font($font-weight: 300, $font-size: 100px );
+      @include font($font-weight: 300, $font-size: 100px);
       padding-top: 200px;
       margin-bottom: 32px;
       width: 452px;
@@ -66,7 +58,7 @@ display: none;
     }
 
     @media screen and (min-width: 1740px) {
-      @include font($font-weight: 300, $font-size: 140px );
+      @include font($font-weight: 300, $font-size: 140px);
       padding-top: 224px;
       margin-bottom: 40px;
       width: 635px;
@@ -75,16 +67,14 @@ display: none;
   }
 
   &__text {
-    @include font($font-weight: 400, $font-size: 18px );
+    @include font($font-weight: 400, $font-size: 18px);
     color: $accent-color;
-    line-height: 18px; 
-    // margin-bottom: 343px;
-    // width: 254px;
-    // height: 36px;
-    
+    line-height: 18px;
+    width: 254px;
+    height: 36px;
 
     @media screen and (min-width: 1306px) {
-      @include font($font-weight: 400, $font-size: 17px );
+      @include font($font-weight: 400, $font-size: 17px);
       margin-bottom: 40px;
       color: $accent-color;
       width: auto;
@@ -92,63 +82,66 @@ display: none;
     }
 
     @media screen and (min-width: 1740px) {
-      @include font($font-weight: 400, $font-size: 24px );
+      @include font($font-weight: 400, $font-size: 24px);
       color: $accent-color;
       font-family: "Open Sans";
-      line-height: 44px; 
+      line-height: 44px;
       margin-bottom: 139px;
       padding-left: 15px;
     }
   }
 
   &__btn {
-    @include font($font-weight: 700, $font-size: 16px );
-    // @include flex-mixin($justify-content: center, $align-items: center );
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include font($font-weight: 700, $font-size: 16px);
+    @include flex-mixin($justify-content: center, $align-items: center);
     background-color: $btn-bg;
     padding: 14px 70px;
     color: $button-text;
-    line-height: 18px; 
+    line-height: 18px;
     border-radius: 20px;
     margin-bottom: 32px;
     margin-top: 343px;
+    margin-left: auto;
+    margin-right: auto;
 
     @media screen and (min-width: 1306px) {
-      @include font($font-weight: 400, $font-size: 22.8px );
+      @include font($font-weight: 400, $font-size: 22.8px);
       width: 452px;
       height: 56px;
-       padding: 16px;
-       line-height: normal; 
-       border-radius: 35.5px;
-       margin-top: 0;
-       margin-bottom: 96px;
-       border-radius: 35.6px;
-     }
-     
-     @media screen and (min-width: 1740px) {
-      @include font($font-weight: 400, $font-size: 32px );
-       width: 636px;
-       height: 80px;
-       padding: 20px;
-       line-height: 44px; 
-       border-radius: 50px;
-       margin-bottom: 150px;
-     }
+      padding: 16px;
+      line-height: normal;
+      border-radius: 35.5px;
+      margin-top: 0;
+      margin-bottom: 96px;
+      border-radius: 35.6px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    @media screen and (min-width: 1740px) {
+      @include font($font-weight: 400, $font-size: 32px);
+      width: 636px;
+      height: 80px;
+      padding: 20px;
+      line-height: 44px;
+      border-radius: 50px;
+      margin-bottom: 150px;
+    }
   }
 
   &__info-list {
     @include gap-mixin($gap: 40px);
+    @include flex-mixin($justify-content: center, $align-items: start);
 
     @media screen and (min-width: 1306px) {
       @include gap-mixin($gap: 100px);
-     }
-     
-     @media screen and (min-width: 1740px) {
+      justify-content: start;
+    }
+
+    @media screen and (min-width: 1740px) {
       @include gap-mixin($gap: 138px);
       padding-left: 10px;
-     }
+    }
   }
 
   &__info-item {
@@ -159,7 +152,30 @@ display: none;
     width: 42px;
     height: 42px;
     margin-bottom: 16px;
+
+    @media screen and (min-width: 1306px) {
+      width: 32px;
+      height: 32px;
+    }
+
+    @media screen and (min-width: 1740px) {
+      width: 42px;
+      height: 42px;
+    }
   }
-}
-}
+
+  &__info-text {
+    @include font($font-weight: 400, $font-size: 14px);
+    line-height: normal;
+
+    @media screen and (min-width: 1306px) {
+      @include font($font-weight: 400, $font-size: 10px);
+      line-height: normal;
+    }
+
+    @media screen and (min-width: 1740px) {
+      @include font($font-weight: 400, $font-size: 14px);
+      line-height: 18px;
+    }
+  }
 }
