@@ -54,7 +54,6 @@
 
   &__logo {
     fill: $accent-color;
-    // margin-right: 644px;
   }
 
   &__list {
@@ -62,6 +61,7 @@
     position: relative;
 
     @media screen and (min-width: 1306px) {
+      @include gap-mixin($gap: 32px);
       display: flex;
       margin-left: 511px;
     }
@@ -71,36 +71,32 @@
     }
   }
 
-  &__item {
-    margin-right: 40px;
-  }
-
   &__link {
     @media screen and (min-width: 1306px) {
-      @include font($font-weight: 400, $font-size: 14.2px );
+      @include font($font-weight: 400, $font-size: 14.2px);
+      color: $main-text-color;
       line-height: 31.3px;
     }
 
     @media screen and (min-width: 1740px) {
       @include font($font-weight: 400, $font-size: 20px);
-    color: $main-text-color;
-    line-height: 44px;
+      color: $main-text-color;
+      line-height: 44px;
 
-    &:hover,
-    &:focus {
-      color: $accent-color;
-    }
+      &:hover,
+      &:focus {
+        color: $accent-color;
+      }
     }
   }
 
   &__label {
     opacity: 0;
-    transition: opacity 1s cubic-bezier(.91,0,.05,.32);
+    transition: opacity 1s cubic-bezier(0.91, 0, 0.05, 0.32);
   }
 
   &__btn:checked ~ &__label {
     opacity: 1;
-    
   }
 
   &__btn {
