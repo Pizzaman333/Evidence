@@ -210,7 +210,59 @@
     &__icon {
         width: 206px;
         height: 206px;
-       
+        // top: 20px;
+        // left: 50px;
+    }
+
+    &__first-item {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__first-item > &__icon:nth-child(3) {
+        // background-color: darkblue;
+        position: absolute;
+        top: -20px;
+        left: 28px;
+        width: 206px;
+        height: 206px;
+
+    }
+
+    &__first-item > &__icon:nth-child(4) {
+        // background-color: rgb(88, 0, 139);
+        position: absolute;
+        top: 180px;
+        left: 0;
+        width: 206px;
+        height: 206px;
+    }
+
+
+// threeeee
+
+    &__three-item {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__three-item > &__icon:nth-child(3) {
+        background-color: darkblue;
+        position: absolute;
+        top: 40px;
+        left: 28px;
+        width: 70px;
+        height: 66px;
+
+    }
+
+    &__three-item > &__icon:nth-child(4) {
+        background-color: rgb(88, 0, 139);
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        width: 76px;
+        height: 76px;
     }
 
 //     width: 193px;
