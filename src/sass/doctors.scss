@@ -6,6 +6,9 @@
 @import "./base/common";
 @import "./base/container";
 @import "./components/header";
+@import "./sections/index/registration";
+@import "./sections/index/log-in";
+@import "./sections/index/menu";
 @import "./sections/doctors/docs";
 @import "./sections/doctors/appointment";
 @import "./sections/doctors/call";
