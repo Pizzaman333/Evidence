@@ -2,7 +2,7 @@
     background:  $bg-color;
     padding-top: 32px;
     // padding-bottom: 50px;
-    outline: solid black 2px;
+    // outline: solid black 2px;
 
     @media screen and (min-width: 1306px) {
         
@@ -171,9 +171,9 @@
             font-size: 106px;
          }  
 
-        @media screen and (min-width: 1740px) {
-            display: none;
-           }
+        // @media screen and (min-width: 1740px) {
+        //     display: none;
+        //    }
     }
 
     &__subtitle:nth-child(1) {
@@ -202,7 +202,8 @@
           }  
 
         @media screen and (min-width: 1740px) {
-            display: none;
+            margin-right: auto;
+            margin-left: auto;
            
            }
     }
