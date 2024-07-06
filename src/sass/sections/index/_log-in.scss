@@ -1,4 +1,12 @@
 .log-in {
+    // background-color: cyan;
+
+    &__close {
+        display: block;
+        margin-left: auto;
+        margin-bottom: 32px;
+    }
+    
 
     &__title {
         color: var(--blue-dark-blue, #2887D9);
@@ -13,6 +21,7 @@
     }
 
     &__input {
+        position: relative;
         margin-bottom: 20px;
         margin-top: 8px;
         padding-left: 32px;
@@ -29,7 +38,7 @@
         border: none;
         // padding-left: 24px;
         // margin-left: 24px;
-        width: 342px;
+        // width: 342px;
         // margin-bottom: 200px;
     }
 
@@ -39,7 +48,7 @@
 
     &__icon1 {
         position: absolute;
-       bottom: 33px;
+        bottom: 33px;
         right: 16px;
         width: 20px;
         height: 20px;
@@ -62,7 +71,7 @@
         font-weight: 700;
         line-height: 18px; 
         // margin-left: 24px;
-        width: 342px;
+        // width: 342px;
     }
 
     &__icon {
@@ -127,6 +136,10 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    &__forgot {
+        padding-bottom: 14px;
     }
 }
 
