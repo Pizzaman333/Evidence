@@ -12,7 +12,13 @@
   &__burger {
     width: 24px;
     height: 24px;
-    stroke: $accent-color;
+    stroke: $btn-bg;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      stroke: $accent-color;
+    }
 
     @media screen and (min-width: 1306px) {
       display: none;
@@ -24,6 +30,12 @@
     height: 24px;
     stroke: $btn-bg;
     fill: $bg-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      stroke: $accent-color;
+    }
 
     @media screen and (min-width: 1306px) {
       display: none;
@@ -77,6 +89,7 @@
       @include font($font-weight: 400, $font-size: 14.2px);
       color: $main-text-color;
       line-height: 31.3px;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     @media screen and (min-width: 1740px) {
@@ -119,6 +132,7 @@
 
   &__menu {
     display: none;
+    
 
     @media screen and (min-width: 1306px) {
       display: flex;
