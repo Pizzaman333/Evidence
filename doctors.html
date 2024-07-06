@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Evidence</title>
     <script type="module" crossorigin src="/Evidence/assets/index-3cfb730f.js"></script>
-    <link rel="stylesheet" href="/Evidence/assets/doctors-7f0dba12.css">
+    <link rel="stylesheet" href="/Evidence/assets/doctors-11805535.css">
   </head>
   <body class="doctors__body">
     <header class="header">
@@ -83,6 +83,318 @@
     </form>
   </div>
 </header>
+
+     <div class="registration  is-hidden" data-register>
+    <div class="container registration__container">
+        <button type="button" class="registration__close" data-register-close>
+            <svg class="registration__dugger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M9.17 14.83L14.83 9.17M14.83 14.83L9.17 9.17M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#72B7F2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <h2 class="registration__title">
+            Особистий кабінет
+        </h2>
+        <ul class="registration__list">
+            <li>
+                <button type="button" class="registration__text1"  data-log-in-open>
+                    Вхід
+                </button>
+            </li>
+            <li>
+                <p class="registration__text">
+                    Реєстрація
+                </p>
+            </li>
+        </ul>
+        
+        <label class="registration__label" for="PIB">ПІБ:</label>
+        <input id="PIB" class="registration__input" type="text">
+        <p  class="registration__text">Дата народження:</p>
+        <ul class="registration__button-list">
+            <li>
+                <button class="registration__btn">
+                    Дата
+                </button>
+            </li>
+            <li>
+                <button class="registration__btn">
+                    Місяць
+                </button>
+            </li>
+            <li>
+                <button class="registration__btn">
+                    Рік
+                </button>
+            </li>
+        </ul>
+        <p class="registration__text">Стать:</p>
+
+        <div class="input-box">
+            <div class="input-label-box">
+                <label class="registration__label-circel" for="customChekbox">жіноча</label>
+            <input class="registration__circle-input" type="checkbox" name="" id="customChekbox">
+            </div>
+            
+            <div class="input-label-box"><label class="registration__label-circel" for="customChekbox">чоловіча</label>
+                <input class="registration__circle-input" type="checkbox" name="" id="customChekbox">
+            </div>
+        </div>
+        
+
+        <label for="">Телефон</label>
+        <input class="registration__input" type="text" name="" id="">
+
+        <label for="">Адреса e-mail:</label>
+        <input class="registration__input" type="text" name="" id="">
+
+        <div class="input-icon-box">
+            <label for="">Пароль: (Пароль повинен бути не менше 6 симфолів довжиною.)</label>
+            <input placeholder="*******" class="registration__input" type="text" name="" id="">
+            <svg class="registration__icon1">
+                <use href="../../image/icons/symbol-defs.svg#icon-Eye"></use>
+            </svg>
+        </div>
+        
+
+        <div class="input-icon-box">
+            <label for="">Підтвердження пароля:</label>
+            <input placeholder="*******" class="registration__input" type="text" name="" id="">
+            <svg class="registration__icon1">
+                <use href="../../image/icons/symbol-defs.svg#icon-Eye"></use>
+            </svg>
+        </div>
+        
+
+        <button class="registration__button">Зареєструватися</button>
+
+        <div class="registration__box">
+            <p class="registration__text2">Або увійти через
+                соцмережі</p>
+            <ul class="registration__icon-box">
+                <li>
+                    <svg class="registration__icon">
+                        <use href="../../image/icons/symbol-defs.svg#icon-Google-logo"></use>
+                    </svg>
+                </li>
+                <li>
+                    <svg class="registration__icon">
+                        <use href="../../image/icons/symbol-defs.svg#icon-facebook-logo"></use>
+                    </svg>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div> 
+    <section class="log-in is-hidden" data-log-in>
+    <div class="log-in__wrapper-box container"> 
+        <button type="button" class="log-in__close" data-log-in-close>
+            <svg class="log-in__dugger" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M9.17 14.83L14.83 9.17M14.83 14.83L9.17 9.17M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#72B7F2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>   
+        <h2 class="log-in__title">
+            Особистий кабінет
+        </h2>
+        <ul class="log-in__list">
+            <li>
+                <p class="log-in__text1">
+                    Вхід
+                </p>
+            </li>
+            <li>
+                <p class="log-in__text">
+                    Реєстрація
+                </p>
+            </li>
+        </ul>
+
+        <div class="input-icon-box">
+            <label class="log-in__label-wrapper" for="">Персональний номер:</label>
+            <input placeholder="Ваш персональний номер" class="log-in__input" type="text" name="" id="">
+
+            <label class="log-in__label-wrapper" for="">Підтвердження пароля:</label>
+            <input placeholder="*******" class="log-in__input log-in__input-last" type="text" name="" id="">
+            <svg class="log-in__icon1">
+                <use href="../../image/icons/symbol-defs.svg#icon-Eye"></use>
+            </svg>
+            
+        </div>
+        <p class="log-in__forgot">Забули пароль?</p>
+
+        <button class="log-in__button">Вхід</button>
+
+            <div class="log-in__box">
+                <p class="log-in__text2">Або увійти через
+                    соцмережі</p>
+                <ul class="log-in__icon-box">
+                    <li>
+                        <svg class="registration__icon">
+                            <use href="../../image/icons/symbol-defs.svg#icon-Google-logo"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg class="registration__icon">
+                            <use href="../../image/icons/symbol-defs.svg#icon-facebook-logo"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+    </div>
+</section>
+
+    <div class="menu container is-hidden" data-menu>
+  <div class="menu__box container">
+    <div class="menu__header">
+      <button class="menu__btn" data-menu-close>
+        <svg class="menu__icon-close">
+          <use
+            href="../../image/icons/symbol-defs-2.svg#icon-modal-close"
+          ></use>
+        </svg>
+      </button>
+      <a class="header__logo-link" href="./index.html">
+        <ul class="menu__logo-list">
+          <li>
+            <img src="/Evidence/assets/logo-8f557289.svg" alt="logo" />
+          </li>
+          <li>
+            <svg class="header__logo2">
+              <use href="../../image/icons/symbol-defs.svg#icon-logo"></use>
+            </svg>
+          </li>
+        </ul>
+      </a>
+      <svg class="header__search menu__search">
+        <use href="../../image/icons/symbol-defs-2.svg#icon-search"></use>
+      </svg>
+    </div>
+  </div>
+  <div class="menu__registration">
+    <ul class="menu__registration-list">
+      <li class="menu__registration-item">
+        <svg class="menu__personality">
+          <use
+            href="../../image/icons/symbol-defs-2.svg#icon-personality"
+          ></use>
+        </svg>
+        <p class="menu__login-text">Увійти</p>
+      </li>
+      <li class="menu__registration-item">
+        <svg class="menu__global">
+          <use href="../../image/icons/symbol-defs-2.svg#icon-global"></use>
+        </svg>
+        <p class="menu__login-text">
+          Укр /<span class="menu__login-eng"> Eng</span>
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div class="menu__sections">
+    <ul class="menu__list">
+      <li class="menu__item">
+        <a class="menu__link" href="../../index.html">Про нас</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="../../doctors.html">Лікарі</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="">Вартість</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="">Запитання</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="">Відгуки</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="">Контакти</a>
+      </li>
+    </ul>
+  </div>
+  <div class="menu__footer">
+    <ul class="menu__first-list">
+      <li class="footer__list-item">
+        <ul class="footer__first-box">
+          <li>
+            <svg class="footer__icons">
+              <use href="/Evidence/assets/symbol-defs-e0ba8400.svg#icon-map"></use>
+            </svg>
+          </li>
+          <li>
+            <ul class="footer__discription-box">
+              <li>
+                <p class="footer__text">Адреса:</p>
+              </li>
+              <li>
+                <p class="footer__discription">
+                  м.Львів, проспект Відродження, 121
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="footer__list-item">
+        <ul class="footer__first-box">
+          <li>
+            <svg class="footer__icons">
+              <use href="/Evidence/assets/symbol-defs-e0ba8400.svg#icon-email"></use>
+            </svg>
+          </li>
+          <li>
+            <ul class="footer__discription-box">
+              <li>
+                <p class="footer__text">Email:</p>
+              </li>
+              <li>
+                <p class="footer__discription">evidence.ua@gmail.com</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="footer__list-item">
+        <ul class="footer__first-box">
+          <li>
+            <svg class="footer__icons">
+              <use href="/Evidence/assets/symbol-defs-e0ba8400.svg#icon-phone"></use>
+            </svg>
+          </li>
+          <li>
+            <ul class="footer__discription-box">
+              <li>
+                <p class="footer__text">Телефон:</p>
+              </li>
+              <li>
+                <p class="footer__discription">(800) 000 00 00</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="footer__list-item">
+        <ul class="footer__second-box">
+          <li>
+            <svg class="footer__icons">
+              <use href="/Evidence/assets/symbol-defs-e0ba8400.svg#icon-instagram"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="footer__icons">
+              <use href="/Evidence/assets/symbol-defs-e0ba8400.svg#icon-facebook"></use>
+            </svg>
+          </li>
+          <li>
+            <svg class="footer__icons">
+              <use href="/Evidence/assets/symbol-defs-e0ba8400.svg#icon-google"></use>
+            </svg>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
 
     <section class="docs">
   <div class="container">
@@ -383,7 +695,7 @@
 </div>
 
     <section class="doctor" data-doctor>
-  <div class="container">
+  <div class="container doctor__container">
     <button class="doctor__btn" data-doctor-close>
       <svg class="doctor__cross" width="26px" height="24px">
         <use href="../../image/icons/symbol-defs.svg#icon-cross"></use>
@@ -453,7 +765,7 @@
             Закінчив ВНМУ ім. М. І. Пирогова у 2018 році за спеціальністю
             «Лікувальна справа» з відзнакою.
           </p>
-          <!-- <p class="doctor__maintext">
+          <p class="doctor__maintext">
             Рішенням Вченої ради ВНМУ ім. М. І. Пирогова залишений на наукову
             роботу
             <span class="doctor__maintext-wrap"
@@ -462,8 +774,8 @@
               та організації охорони здоров’я ВНМУ ім. М. І. Пирогова. В 2019
               року здобув первинну спеціалізацію “Інфекційні хвороби”.</span
             >
-          </p> -->
-          <p class="doctor__maintext">
+          </p>
+          <!-- <p class="doctor__maintext">
             Рішенням Вченої ради ВНМУ ім. М. І. Пирогова залишений на наукову
             роботу на кафедрі дитячих інфекційних хвороб. 
           </p>
@@ -473,7 +785,7 @@
               та організації охорони здоров’я ВНМУ ім. М. І. Пирогова. В 2019
               року здобув первинну спеціалізацію “Інфекційні хвороби”.</span
             >
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
@@ -662,9 +974,12 @@
         </ul>
     </div>
 </footer>
-
+ 
     <script src="./js/call.js"></script>
     <script src="./js/doctor.js"></script>
+    <script src="./js/registration.js"></script>
+    <script src="./js/log-in.js"></script>
+    <script src="./js/mobile-menu.js"></script>
     
     <script
     type="module"
