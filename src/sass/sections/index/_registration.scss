@@ -1,6 +1,18 @@
 .registration {
-    padding: 26px 0px 16px 0px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    // padding: 26px 0px 16px 0px;
     background-color: #ECEFF7;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+
+    &__container {
+        overflow-y: scroll;
+        width: 390px;
+        height: 100%;
+    }
 
     &__title {
         color: var(--blue-dark-blue, #2887D9);
@@ -10,12 +22,16 @@
         font-weight: 700;
         line-height: 24px; 
         margin-bottom: 27.5px;
+        text-align: center;
     }
 
-    .regestration__close {
+    &__close {
         display: block;
-        margin-left: auto;
+        margin-left: 310px;
+        margin-top: 28px;
         margin-bottom: 32px;
+        padding: 0;
+        background-color: transparent;
     }
     
     
@@ -58,6 +74,8 @@
         font-style: normal;
         font-weight: 400;
         line-height: 22px; 
+        padding: 0;
+        background-color: transparent;
     }
 
     &__text:active,&__text:active:hover {
