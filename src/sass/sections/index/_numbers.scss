@@ -37,10 +37,19 @@
     &__list {
         display: flex;
         flex-wrap: wrap;
-        width: 390px;
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
+        // width: 390px;
+        // display: block;
+        // margin-right: auto;
+        // margin-left: auto;
+        // justify-content: center;
+        display: flex;
+        // align-items: center;
+        justify-content: center;
+
+        @media screen and (min-width: 400px){
+            width: 390px;
+            justify-content: start;
+        }
 
         @media screen and (min-width: 1306px) {
             display: start;
