@@ -12,6 +12,7 @@
 
   &__box {
     @include flex-mixin($justify-content: space-between, $align-items: center);
+ max-width: 342px;
   }
 
   &__header {
@@ -26,15 +27,14 @@
   &__icon-close {
     stroke: $btn-bg;
     fill: $bg-color;
+    background-color: $bg-color;
     width: 24px;
     height: 24px;
     margin-right: 58px;
   }
 
   &__search {
-    position: absolute;
-    top: 20px;
-    right: 22px;
+    margin-left: 44px;
   }
 
   &__registration-list {

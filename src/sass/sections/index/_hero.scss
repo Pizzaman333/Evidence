@@ -14,7 +14,7 @@
 
   @media screen and (min-width: 1306px) {
     background-image: url(../image/tablet/hero-bg@1x.webp);
-    background-position: 790px 0;
+    background-position-x: calc(100% / 2 + 347px);
     padding-bottom: 90px;
     background-size: contain;
   }
@@ -28,7 +28,7 @@
 
   @media screen and (min-width: 1740px) {
     background-image: url(../image/destop/hero-bg@1x.webp);
-    background-position: 1044px 0;
+    background-position-x: calc(100% / 2 + 460px);
     padding-bottom: 69px;
   }
 
