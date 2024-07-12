@@ -10,6 +10,10 @@
   overflow-y: scroll;
   padding-bottom: 75px;
 
+  @media screen and (min-width: 1306px) {
+    padding-top: 40px;
+  }
+
   @media screen and (min-width: 1740px) {
     padding-top: 64px;
     padding-bottom: 32px;
@@ -36,9 +40,11 @@
 
     @media screen and (min-width: 1306px) {
       right: calc(100% / 2 - 375px);
+      top: 24px;
     }
 
     @media screen and (min-width: 1740px) {
+      top: 50px;  
       right: calc(100% / 2 - 441px);
     }
   }
@@ -385,10 +391,30 @@ font-size: 20px;
     }
   }
 
-  &__maintext:nth-child(3) {
-    
+  &__maintext:nth-child(4) {
+    max-width: 326px;
+    height: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     @media screen and (min-width: 1306px) {
+      height: 100%;
+      max-width: 393px;
+    }
+
+    @media screen and (min-width: 1740px) {
+      max-width: 523px;
+    }
+  }
+
+  &__maintext:nth-child(5) {
+
+    @media screen and (min-width: 1306px) {
+      width: 394px;
+      height: 27px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
     @media screen and (min-width: 1740px) {
@@ -399,6 +425,22 @@ font-size: 20px;
       white-space: nowrap;
     }
   }
+
+  &__none1 {
+display: block;
+
+@media screen and (min-width: 1306px) {
+  display: none;
+}
+  }
+
+  &__none2 {
+   display: none;
+
+    @media screen and (min-width: 1306px) {
+      display: block;
+    }
+      }
 
   &__link {
     display: block;
@@ -411,8 +453,13 @@ font-size: 20px;
     margin-top: 16px;
     margin-right: 8px;
 
-    @media screen and (min-width: 1740px) {
+    @media screen and (min-width: 1306px) {
       margin-right: 0;
+    }
+
+    @media screen and (min-width: 1740px) {
+
+
       margin-top: 24px;
     }
   }
@@ -426,12 +473,16 @@ font-size: 20px;
     margin-left: 8px;
     margin-top: 40px;
 
-    @media screen and (min-width: 1740px) {
-     margin-left: 93px;
+    @media screen and (min-width: 1306px) {
 font-family: "Open Sans";
-font-size: 32px;
+font-size: 25px;
 font-weight: 400;
 line-height: 137.5%; 
+    }
+
+    @media screen and (min-width: 1740px) {
+     margin-left: 93px;
+font-size: 32px;
     }
   }
 
@@ -445,6 +496,14 @@ line-height: 137.5%;
     margin-top: 16px;
     padding: 15.677px 16.089px 16.589px 33.004px;
     position: relative;
+
+    @media screen and (min-width: 1306px) {
+     width: 380px;
+     height: 189px;
+     padding: 22px 16px 23px 38px;
+     margin-left: 80px;
+     border-radius: 32px;
+          }
 
     @media screen and (min-width: 1740px) {
       margin-left: 137px;
@@ -461,6 +520,13 @@ line-height: 137.5%;
     top: 30px;
     left: -61.47px;
 
+    @media screen and (min-width: 1306px) {
+      width: 100px;
+      height: 100px;
+      top: 32px;
+          }
+      
+
     @media screen and (min-width: 1740px) {
       width: 134px;
       height: 134px;
@@ -474,6 +540,10 @@ line-height: 137.5%;
     font-size: 13.201px;
     font-weight: 400;
     line-height: normal;
+
+    @media screen and (min-width: 1306px) {
+      font-size: 17.786px;
+          }
 
     @media screen and (min-width: 1740px) {
       font-size: 22.767px;
@@ -489,13 +559,28 @@ line-height: 137.5%;
     width: 134px;
     height: 134px;
     border-radius: 50%;
+    display: none;
+
+    @media screen and (min-width: 1306px) {
+      display: block;
+      width: 100px;
+      height: 100px;
+          }
 
     &:nth-child(2) {
       margin-left: 53px;
+
+      @media screen and (min-width: 1306px) {
+        margin-left: 40px;
+            }
     }
     
     &:nth-child(3) {
       margin-left: 31px;
+
+      @media screen and (min-width: 1306px) {
+        margin-left: 40px;
+            }
     }
   }
 }
