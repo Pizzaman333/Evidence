@@ -1,2 +1,0 @@
-import"./assets/mobile-menu-d59a136b.js";(()=>{const e={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]")};e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o);function o(){e.modal.classList.toggle("is-hidden")}})();
-//# sourceMappingURL=commonHelpers2.js.map
