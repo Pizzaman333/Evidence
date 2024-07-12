@@ -2,7 +2,7 @@
         background:  $bg-color;
         padding-top: 24px;
         padding-bottom: 55px;
-        outline: solid yellow 2px;
+        // outline: solid yellow 2px;
 
         @media screen and (min-width: 1306px) {
             
@@ -17,13 +17,19 @@
     &__title {
         color: $accent-color;
         font-family: "Open Sans";
-        font-size: 16px;
+        font-size: 12px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 44px; /* 91.667% */
         text-align: center;
         display: none;
+       
         // margin-bottom: 20px;
+
+        @media screen and (min-width: 400px) {
+            font-size: 16px;
+            font-weight: 600;
+        }
 
 
         @media screen and (min-width: 1306px) {
@@ -45,7 +51,13 @@
         font-family: "Open Sans";
         font-size: 16px;
         font-weight: 600;
-        line-height: 44px; /* 91.667% */
+        line-height: 22px; /* 91.667% */
+        padding-bottom: 7px;
+
+        @media screen and (min-width: 400px) {
+            padding-bottom: 0;
+            line-height: 44px; /* 91.667% */
+        }
 
         @media screen and (min-width: 1306px) {
             display: none;
@@ -63,10 +75,14 @@
         flex-direction: column;
         border-radius: 50px;
         margin-bottom: 20px;
-        margin-right: 39px;
+        margin-right: 20px;
         gap: 4px;
-        // margin-left: auto;
-        // margin-right: auto;
+
+        @media screen and (min-width: 400px) {
+            font-size: 16px;
+            font-weight: 600;
+            margin-right: 39px;
+        }
         
         
         @media screen and (min-width: 1306px) {
@@ -95,11 +111,16 @@
     &__link {
         color: $main-text-color;
         font-family: "Open Sans";
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
         line-height: 22px; /* 137.5% */
         width: 149px;
 
+        @media screen and (min-width: 400px) {
+            font-size: 16px;
+        }
+
+        
         @media screen and (min-width: 1306px) {
             font-size: 23px;
             font-weight: 600;
@@ -285,7 +306,7 @@
         content: url(../../../image/destop/plus.webp);
         width: 30px;
         height: 30px;
-        background-color: chartreuse;
+        // background-color: chartreuse;
         text-align: center;
         align-items: center;
         transition: all 0.35s;
@@ -303,7 +324,7 @@
         text-align: center;
         // align-items: center;
         justify-content: center;
-        background-color: aqua;
+        // background-color: aqua;
         transition: all 0.35s;
         margin-left: 100px
         
