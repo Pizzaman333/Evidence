@@ -50,6 +50,10 @@
         font-weight: 400;
         line-height: normal;
 
+        @media screen and (max-width:363px) {
+            font-size: 12px;
+        }
+
         @media screen and (min-width:1306px) {
             font-size: 23px;
         }
@@ -89,6 +93,10 @@
         width: 280px;
         height: 140px;
         margin-left: 61px;
+
+        @media screen and (max-width:362px) {
+            width: 250px;
+        }
  
         @media screen and (min-width:1306px) {
             width: 484px;
@@ -185,7 +193,7 @@
     //     @media screen and (min-width:1306px) {
     //        display: none;
     //     }
-    // }
+    // } 
 
     // &__mobile-section ul {
     //     display: flex;
