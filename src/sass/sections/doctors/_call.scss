@@ -58,6 +58,7 @@ line-height: 112.5%;
 background: $btn-bg;
 width: 342px;
 height: 46px;
+cursor: pointer;
     }
 
     &__timer {
@@ -86,6 +87,11 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: 0;
+cursor: pointer;
+
+@media screen and (max-width:412px) {
+    right: calc((100% - 325px)/2);
+  }
 
 @media screen and (min-width: 1306px) {
     display: none;

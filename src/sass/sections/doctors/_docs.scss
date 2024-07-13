@@ -141,6 +141,7 @@ font-size: 14.229px;
   &__occupation {
     color: $accent-color;
     font-weight: 400;
+    cursor: pointer;
 
     @media screen and (min-width: 1306px) {
       font-size: 24px;
@@ -203,6 +204,7 @@ font-size: 14.229px;
   &__btn {
     background-color: transparent;
     color: $accent-color;
+    cursor: pointer;
   }
 
   &__text {

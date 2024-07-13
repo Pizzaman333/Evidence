@@ -138,6 +138,7 @@
     animation-iteration-count: initial;
 
     &:hover {
+      cursor: pointer;
       background-color: $accent-color;
       box-shadow: 0px 4px 32px 0px rgba(35, 63, 119, 0.50);
     }
