@@ -43,23 +43,6 @@
         }
     }
 
-    &__line {
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background-color: #72B7F2;
-        display: none   ;
-
-        @media screen and (min-width:1306px) {
-          display: block;
-          top: 56px;
-        }
-
-        @media screen and (min-width:1740px) {
-            top: 100px;
-          }
-    }
-
     &__first-box {
         display: flex;
         align-items: center;
@@ -83,12 +66,16 @@
         padding-top: 12px;
         border-top: solid 2px #72B7F2;
         margin: 0 auto;
-        width: 387px;
+        width: 342px;
         gap: 16px;
         justify-content: center;
         display: flex;
         padding-bottom: 12px;
         flex-direction: column;
+
+        @media screen and (max-width:390px) {
+            width: 300px;
+        }
 
         @media screen and (min-width:1306px) {
             flex-direction: row;

@@ -4,6 +4,10 @@
   padding-top: 20px;
   padding-bottom: 30px;
 
+  &__modal {
+    background-color: transparent;
+  }
+
   @media screen and (min-width: 1740px) {
     padding-top: 50px;
     padding-bottom: 60px;

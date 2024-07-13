@@ -10,6 +10,14 @@
   z-index: 3;
   overflow-y: scroll;
 
+  &__btn {
+    background-color: transparent;
+  }
+
+  @media screen and (min-width: 1306px) {
+   display: none;
+ }  
+
   &__box {
     @include flex-mixin($justify-content: space-between, $align-items: center);
  max-width: 342px;
@@ -38,6 +46,8 @@
   }
 
   &__registration-list {
+    width: 342px;
+    margin: 0 auto;
     @include flex-mixin($justify-content: space-between, $align-items: start);
     padding: 10px 22px;
     border: 1px solid $btn-bg;
@@ -74,12 +84,15 @@
 
   &__item {
     margin-bottom: 8px;
+    width: 342px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__item::after {
     content: "";
     display: block;
-    width: 356px;
+    width: 342px;
     height: 1.3px;
     background: $light-blue;
     border-radius: 1px;
@@ -94,8 +107,10 @@
   &__first-list {
     @include gap-mixin($gap: 16px);
     padding-top: 12px;
-    width: 387px;
+    width: 342px;
     padding-bottom: 12px;
     flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
