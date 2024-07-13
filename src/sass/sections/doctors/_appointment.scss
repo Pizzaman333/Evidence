@@ -21,6 +21,10 @@
     background: #d0e1f1;
     padding-bottom: 33px;
 
+    @media screen and (max-width:412px) {
+      width: 340px;
+    }
+
     @media screen and (min-width: 1306px) {
       background: none;
       width: 444px;
@@ -106,6 +110,10 @@
     background: #f7f7f8;
     padding-left: 16px;
 
+    @media screen and (max-width:412px) {
+      width: 300px;
+    }
+
     @media screen and (min-width: 1306px) {
         width: 420px;
     }
@@ -187,6 +195,10 @@ gap: 14px;
     width: 342px;
     margin-right: auto;
     margin-left: auto;
+    
+    @media screen and (max-width:412px) {
+      width: 300px;
+    }
 
     @media screen and (min-width: 1306px) {
      margin: 0;
@@ -240,6 +252,10 @@ line-height: 137.5%;
     margin-left: auto;
     width: 346px;
     height: 46px;
+
+    @media screen and (max-width:412px) {
+      width: 300px;
+    }
 
     @media screen and (min-width: 1306px) {
 width: 420px;
