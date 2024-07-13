@@ -84,18 +84,16 @@
 // ten-media
 
      &__list-item &__icon {
-        stroke: red;
+        stroke: $accent-color;
         width: 45px;
         height: 47px;
 
         @media screen and (min-width: 1306px) {
-            stroke: yellowgreen;
             width: 71px;
             height: 71px;
          }
  
            @media screen and (min-width: 1740px) {
-            stroke: burlywood;
             width: 100px;
             height: 100px;
            }
@@ -241,17 +239,15 @@ input[type="radio"] {
     .servise__slider {
         width: 319px;
         height: 176px;
-        // width: 100%;
         position: relative;
         overflow: hidden;
-        border: solid palegreen 3px;
         display: block;
         margin-left: auto;
         margin-right: auto;
 
-        @media screen and (min-width: 400px){
-            width: 390px;
-        }
+        // @media screen and (min-width: 400px){
+        //     width: 390px;
+        // }
 
         @media screen and (min-width: 1306px) {
             display: start;
