@@ -49,6 +49,10 @@
     background: #fff;
     padding-left: 20px;
 
+    @media screen and (max-width:412px) {
+      width: 300px;
+    }
+
     @media screen and (min-width: 1306px) {
       width: 550px;
       border-radius: 35.573px;
